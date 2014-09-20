@@ -1,54 +1,76 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD><TITLE>Menu</TITLE>
-<META http-equiv=Content-Type content="text/html; charset=windows-1252">
-<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
-<BODY text=#ffffff vLink=#ffff00 aLink=#9933ff link=#ffffff bgColor=#ff6699>
-
-<center>
-<p><img src="bblogo2.jpg">
-
-</div>
-<div style="text-align: left"><BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none" 
-href="main.html" target=front>Main</A>
-</FONT></B>
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none" 
-href="aboutus.html" target=front>About Us</A>
-</FONT></B>
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none"
-href="executive.html" target=front>Executive</A>
-<FONT></B>
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none" 
-href="events.html" target=front>Events</A>
-</FONT></B>
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none"
-href="pastevents.html" target=front>Past Events</A>
-</FONT></B> 
-
-
-
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none" 
-href="relatedsites.html" target=front>Related Sites</A>
-</FONT></B>
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none" 
-href="pictures.html" target=front>Pictures</A>
-</FONT></B>
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none" 
-href="contact.html" target=front>Contact Us</A>
-</FONT></B>
-
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none"
-href="sydenhamchallenge.html" target=front>Sydenham Challenge</A>
- 
-<BR><B><FONT face=arial size=2><A style="TEXT-DECORATION: none"
-href="walkthetrack.html" target=front>Walk the Track</A>
-</FONT></B>
-</center>
-
-</BODY></HTML></div>
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Menu</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	    <meta content="MSHTML 6.00.2800.1106" name="generator">
+	</head>
+	<body vLink="#ffff00" aLink="#9933ff" bgColor="#ff6699" onmousemove="setHref()">	
+	    <center>
+	        <img src="bblogo2.jpg">
+	        <div style="text-align: left">
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none" 
+					href="main.html" target="front">Main</a></span></b>
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none" 
+					href="aboutus.html" target="front">About Us</a></span></b>
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none"
+					href="executive.html" target="front">Executive</a></span></b>
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none" 
+					href="events.html" target="front">Events</a></span></b>
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none"
+					href="pastevents.html" target="front">Past Events</a></span></b> 
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none" 
+					href="relatedsites.html" target="front">Related Sites</a></span></b>
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;"><a style="text-decoration: none" 
+					href="pictures.html" target="front">Pictures</a></span></b>
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none" 
+					href="contact.html" target="front">Contact Us</a></span></b>
+	            <br/>
+	            <b><span style="font: Arial; font-size: 14px;" ><a style="text-decoration: none"
+					href="sydenhamchallenge.html" target="front">Sydenham Challenge</a></span></b>
+	            <br/>
+				<b><span style="font: Arial; font-size: 14px;"><a style="text-decoration: none"
+					href="walkthetrack.html" target="front">Walk the Track</a></span></b>
+				<br/>
+				<b><span style="font: Arial; font-size: 14px;"><a href="javascript:alert('Sorry, this website has experienced difficultes. Please try again.'); setHref()" style="text-decoration: none" id="link-mailto">Join the team</a></span></b>	
+				<script type="text/javascript">						 
+					//Trick spambots
+					var elm = document.getElementById("link-mailto");
+					function setHref() {
+						var parts = [
+							"mailto:",
+							"oxford",
+							".marg",
+							"@",
+							"gmail",
+							".",
+							"com",
+							"?subject=",
+							"I%20would%20like%20to%20join%20the%20Breast%20Buddies.",
+							"&body=",
+							"Hi,%0A",
+							"I%20would%20like%20to%20join%20the%20Breast%20Buddies.%0A",
+							"%0A",
+							"(Feel%20free%20to%20change%20this%20email.)%0A",
+							"%0A",
+							"Thanks!"
+						];
+						var finalString = "";
+						for(part in parts) {
+							finalString += parts[part];
+						}
+						elm.setAttribute("href", finalString);
+					}
+				</script>
+	        </div>
+	    </center>
+	</body>
+</html>

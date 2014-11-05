@@ -1,0 +1,708 @@
+/* Single Photo Gallery Slider */
+.jcarousel-skin-delta .jcarousel-container { float:left; }
+.jcarousel-skin-delta .jcarousel-direction-rtl { direction: rtl; }
+.jcarousel-skin-delta .jcarousel-container-horizontal { width: 585px; padding: 0px 30px 0px 30px; }
+.jcarousel-skin-delta .jcarousel-container-vertical { width: 110px; height: 245px; padding: 32px 24px; }
+.jcarousel-skin-delta .jcarousel-clip-horizontal { width:  585px; height: 200px !important; }
+.jcarousel-skin-delta .jcarousel-clip-vertical { width:  110px; height: 245px; }
+.jcarousel-skin-delta .jcarousel-item { height: 200px !important; padding:0px 0px 0px 0px;width: auto !important;}
+.jcarousel-skin-delta .jcarousel-item-horizontal { margin-left: 0; margin-right: 12px; }
+.jcarousel-skin-delta .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 10px; margin-right: 0; }
+.jcarousel-skin-delta .jcarousel-item-vertical { margin-bottom: 10px; }
+.jcarousel-skin-delta .jcarousel-item-placeholder { background: #fff; color: #000; }
+
+.jcarousel-skin-epsilon .jcarousel-container { float:left; }
+.jcarousel-skin-epsilon .jcarousel-direction-rtl { direction: rtl; }
+.jcarousel-skin-epsilon .jcarousel-container-horizontal { width:905px !important; padding: 0px 30px 0px 30px; }
+.jcarousel-skin-epsilon .jcarousel-clip-horizontal { width:905px !important; height: 200px !important; }
+.jcarousel-skin-epsilon .jcarousel-item { height: 200px !important; padding:0px 0px 0px 0px;width: auto !important;}
+.jcarousel-skin-epsilon .jcarousel-item-horizontal { margin-left: 0; margin-right: 12px; }
+.jcarousel-skin-epsilon .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 10px; margin-right: 0; }
+.jcarousel-skin-epsilon .jcarousel-item-vertical { margin-bottom: 10px; }
+.jcarousel-skin-epsilon .jcarousel-item-placeholder { background: #fff; color: #000; }
+
+.jcarousel-skin-zeta .jcarousel-container { float:left; }
+.jcarousel-skin-zeta .jcarousel-direction-rtl { direction: rtl; }
+.jcarousel-skin-zeta .jcarousel-container-horizontal { width: 545px; padding: 0px 30px 0px 30px; }
+.jcarousel-skin-zeta .jcarousel-clip-horizontal { width:  545px; height: 200px !important; }
+.jcarousel-skin-zeta .jcarousel-item { height: 200px !important; padding:0px 0px 0px 0px;width: auto !important;}
+.jcarousel-skin-zeta .jcarousel-item-horizontal { margin-left: 0; margin-right: 12px; }
+.jcarousel-skin-zeta .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 10px; margin-right: 0; }
+.jcarousel-skin-zeta .jcarousel-item-vertical { margin-bottom: 10px; }
+.jcarousel-skin-zeta .jcarousel-item-placeholder { background: #fff; color: #000; }
+
+.jcarousel-skin-tango .jcarousel-container { float:left; }
+.jcarousel-skin-tango .jcarousel-direction-rtl { direction: rtl; }
+.jcarousel-skin-tango .jcarousel-container-horizontal { width: 585px; padding: 0px 30px 0px 30px; }
+.jcarousel-skin-tango .jcarousel-container-vertical { width: 110px; height: 245px; padding: 32px 24px; }
+.jcarousel-skin-tango .jcarousel-clip-horizontal { width:  585px; height: 172px; }
+.jcarousel-skin-tango .jcarousel-clip-vertical { width:  110px; height: 245px; }
+.jcarousel-skin-tango .jcarousel-item { width: 138px; height: 172px; border-right:thin solid #000000; padding:0px px 0px 0px;}
+.jcarousel-skin-tango .jcarousel-item-horizontal { margin-left: 0; margin-right: 8px; }
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 10px; margin-right: 0; }
+.jcarousel-skin-tango .jcarousel-item-vertical { margin-bottom: 10px; }
+.jcarousel-skin-tango .jcarousel-item-placeholder { background: #fff; color: #000; }
+
+.jcarousel-skin-bravo {height:400px;width:600px;margin:0px 20px;}
+.jcarousel-skin-bravo .jcarousel-container.jcarousel-container-horizontal {height:400px;}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+	position: relative;
+	top: -172px;
+	left: 578px;
+	width: 22px;
+	height: 172px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {
+	background-position: -1px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:active {
+	background-position: -3px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+	position: absolute;
+	width: 22px;
+	height: 172px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	top:0px;
+	left:0px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+	background-position: 1px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active {
+	background-position: 3px 0;
+}
+
+.jcarousel-skin-bravo .jcarousel-next-horizontal {
+	position: relative;
+	display: block;
+	top: -101px;
+	left: 560px;
+	width: 40px;
+	height: 50px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	z-index: 1000;
+	background-image: url(../img/nextArrow.png);
+}
+
+.jcarousel-skin-bravo .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+}
+
+.jcarousel-skin-bravo .jcarousel-next-horizontal:hover {
+	background-position: -1px 0;
+}
+
+.jcarousel-skin-bravo .jcarousel-next-horizontal:active {
+	background-position: -3px 0;
+}
+
+.jcarousel-skin-bravo .jcarousel-prev-horizontal {
+	position: absolute;
+	width: 40px;
+	height: 50px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	top:350px;
+	left:0px;
+	z-index: 1000;
+	background-image: url(../img/prevArrow.png);
+}
+
+.jcarousel-skin-bravo .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-bravo .jcarousel-prev-horizontal:hover {
+	background-position: 1px 0;
+}
+
+.jcarousel-skin-bravo .jcarousel-prev-horizontal:active {
+	background-position: 3px 0;
+}
+
+.jcarousel-skin-delta .jcarousel-next-horizontal {
+	position: relative;
+	top: -200px;
+	left: 591px;
+	width: 13px;
+	height: 200px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-image: url("../img/nextArrowDelta.png");
+}
+
+.jcarousel-skin-delta .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-delta .jcarousel-next-horizontal:hover {
+	background-position: -1px 0;
+}
+
+.jcarousel-skin-delta .jcarousel-next-horizontal:active {
+	background-position: -3px 0;
+}
+
+.jcarousel-skin-delta .jcarousel-prev-horizontal {
+	position: absolute;
+	width: 13px;
+	height: 200px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	top:0px;
+	left:10px;
+	background-image: url("../img/prevArrowDelta.png");
+}
+
+.jcarousel-skin-delta .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-delta .jcarousel-prev-horizontal:hover {
+	background-position: 1px 0;
+}
+
+.jcarousel-skin-delta .jcarousel-prev-horizontal:active {
+	background-position: 3px 0;
+}
+
+.jcarousel-skin-epsilon .jcarousel-next-horizontal {
+	position: relative;
+	top: -200px;
+	left: 911px;
+	width: 13px;
+	height: 200px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-image: url("../img/nextArrowDelta.png");
+}
+
+.jcarousel-skin-epsilon .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-epsilon .jcarousel-next-horizontal:hover {
+	background-position: -1px 0;
+}
+
+.jcarousel-skin-epsilon .jcarousel-next-horizontal:active {
+	background-position: -3px 0;
+}
+
+.jcarousel-skin-epsilon .jcarousel-prev-horizontal {
+	position: absolute;
+	width: 13px;
+	height: 200px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	top:0px;
+	left:10px;
+	background-image: url("../img/prevArrowDelta.png");
+}
+
+.jcarousel-skin-epsilon .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-epsilon .jcarousel-prev-horizontal:hover {
+	background-position: 1px 0;
+}
+
+.jcarousel-skin-epsilon .jcarousel-prev-horizontal:active {
+	background-position: 3px 0;
+}
+
+.jcarousel-skin-zeta .jcarousel-next-horizontal {
+	position: relative;
+	top: -200px;
+	left: 551px;
+	width: 13px;
+	height: 200px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-image: url("../img/nextArrowDelta.png");
+}
+
+.jcarousel-skin-zeta .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-zeta .jcarousel-next-horizontal:hover {
+	background-position: -1px 0;
+}
+
+.jcarousel-skin-zeta .jcarousel-next-horizontal:active {
+	background-position: -3px 0;
+}
+
+.jcarousel-skin-zeta .jcarousel-prev-horizontal {
+	position: absolute;
+	width: 13px;
+	height: 200px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	top:0px;
+	left:10px;
+	background-image: url("../img/prevArrowDelta.png");
+}
+
+.jcarousel-skin-zeta .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-zeta .jcarousel-prev-horizontal:hover {
+	background-position: 1px 0;
+}
+
+.jcarousel-skin-zeta .jcarousel-prev-horizontal:active {
+	background-position: 3px 0;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-vertical {
+	position: absolute;
+	bottom: 5px;
+	left: 43px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(next-vertical.png) no-repeat 0 0;
+	z-index: 1000;
+}
+
+.jcarousel-skin-tango .jcarousel-next-vertical:hover {
+	background-position: 0 -32px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-vertical:active {
+	background-position: 0 -64px;
+}
+
+
+
+.jcarousel-skin-tango .jcarousel-prev-vertical {
+	position: absolute;
+	top: 5px;
+	left: 43px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(prev-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical:hover {
+	background-position: 0 -32px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical:active {
+	background-position: 0 -64px;
+}
+
+.jcarousel-skin-delta .jcarousel-next-vertical {
+	position: absolute;
+	bottom: 5px;
+	left: 43px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(next-vertical.png) no-repeat 0 0;
+	z-index: 1000;
+}
+
+.jcarousel-skin-delta .jcarousel-next-vertical:hover {
+	background-position: 0 -32px;
+}
+
+.jcarousel-skin-delta .jcarousel-next-vertical:active {
+	background-position: 0 -64px;
+}
+
+
+
+.jcarousel-skin-delta .jcarousel-prev-vertical {
+	position: absolute;
+	top: 5px;
+	left: 43px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(prev-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-delta .jcarousel-prev-vertical:hover {
+	background-position: 0 -32px;
+}
+
+.jcarousel-skin-delta .jcarousel-prev-vertical:active {
+	background-position: 0 -64px;
+}
+
+
+
+.jcarousel-skin-alpha .jcarousel-container { float:left; }
+.jcarousel-skin-alpha .jcarousel-direction-rtl { direction: rtl; }
+.jcarousel-skin-alpha .jcarousel-container-horizontal { width: 960px; padding: 0px 30px 0px 30px; }
+.jcarousel-skin-alpha .jcarousel-container-vertical { width: 90px; height: 224px; padding: 32px 24px; }
+.jcarousel-skin-alpha .jcarousel-clip-horizontal { width:  910px; height: 224px;}
+.jcarousel-skin-alpha .jcarousel-clip-vertical { width:  90px; height: 224px; }
+.jcarousel-skin-alpha .jcarousel-item { width: 166px; height: 224px; border-right:thin solid #000000;padding-left:5px; }
+.jcarousel-skin-alpha .jcarousel-item-horizontal { margin-left: 0; margin-right: 10px; }
+.jcarousel-skin-alpha .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: 10px; margin-right: 0; }
+.jcarousel-skin-alpha .jcarousel-item-vertical { margin-bottom: 10px; }
+.jcarousel-skin-alpha .jcarousel-item-placeholder { background: #fff; color: #000; }
+
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-alpha .jcarousel-next-horizontal {
+	position: relative;
+	top: -224px;
+	left: 898px;
+	width: 22px;
+	height: 224px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+}
+
+.jcarousel-skin-alpha .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-alpha .jcarousel-next-horizontal:hover {
+	background-position: -1px 0;
+}
+
+.jcarousel-skin-alpha .jcarousel-next-horizontal:active {
+	background-position: -3px 0;
+}
+
+
+.jcarousel-skin-alpha .jcarousel-prev-horizontal {
+	position: absolute;
+	width: 22px;
+	height: 224px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	top:0px;
+	left:0px;
+}
+
+.jcarousel-skin-alpha .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-alpha .jcarousel-prev-horizontal:hover {
+	background-position: 1px 0;
+}
+
+.jcarousel-skin-alpha .jcarousel-prev-horizontal:active {
+	background-position: 3px 0;
+}
+
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-skin-alpha .jcarousel-next-vertical {
+	position: absolute;
+	bottom: 5px;
+	left: 43px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(next-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-alpha .jcarousel-next-vertical:hover {
+	background-position: 0 -32px;
+}
+
+.jcarousel-skin-alpha .jcarousel-next-vertical:active {
+	background-position: 0 -64px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-bravo .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-bravo .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-bravo .jcarousel-prev-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-bravo .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-bravo .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-bravo .jcarousel-next-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-delta .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-delta .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-delta .jcarousel-prev-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-delta .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-delta .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-delta .jcarousel-next-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-zeta .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-zeta .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-zeta .jcarousel-prev-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-zeta .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-zeta .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-zeta .jcarousel-next-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-alpha .jcarousel-prev-vertical {
+	position: absolute;
+	top: 5px;
+	left: 43px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	background: transparent url(prev-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-alpha .jcarousel-prev-vertical:hover {
+	background-position: 0 -32px;
+}
+
+.jcarousel-skin-alpha .jcarousel-prev-vertical:active {
+	background-position: 0 -64px;
+}
+
+.jcarousel-skin-alpha .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-alpha .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-alpha .jcarousel-prev-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-alpha .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-alpha .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-alpha .jcarousel-next-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+
+#photoGallerySlider-list-head { 
+	float:left; 
+	width:100%;
+	margin:0px 0px 10px 0px;
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-size:18px;
+	color:#000000;
+	text-transform:uppercase;
+}
+
+.photoGallerySlider-box-container-tango {width:640px;margin:10px 0px 25px 0px;height:220px;overflow:hidden;}
+.photoGallerySlider-box-container-tango .photogallerySliderItem {float:left;height:172px;width:90px;padding: 0px 5px 0px 0px !important;}
+.photoGallerySlider-box-container-tango .photoGallerySliderItemTitle {display:block;float:left;width:100%;font-family:"Open Sans";font-size:12px;font-weight:600;text-transform:uppercase;line-height:1.1em;text-align: center;margin: 3px 0px 0px 0px;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-tango .photoGallerySliderItemTitle a {display:block;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-tango .photoGallerySliderItemDate {display:block;float:left;width:100%;text-align:center;color:#898989;font-family:"Open Sans";font-weight:500;font-size:9px;margin: 2px 0px 0px 0px;}
+
+.photoGallerySlider-box-container-alpha {width:960px;margin-top:10px;margin-bottom:10px;height:270px;overflow:hidden;padding:0px 0px 0px 5px;}
+.photoGallerySlider-box-container-alpha .photogallerySliderItem {float:left;height:224px;width:175px;padding: 0px 5px 0px 0px;}
+.photoGallerySlider-box-container-alpha .photoGallerySliderItemTitle {display:block;float:left;width:100%;font-family:"Open Sans";font-size:14px;font-weight:600;text-transform:uppercase;margin: 8px 0px 0px 0px;text-align: center;}
+.photoGallerySlider-box-container-alpha .photoGallerySliderItemTitle a {display:block;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-alpha .photoGallerySliderItemDate {display:block;float:left;width:100%;text-align:center;color:#898989;font-family:"Open Sans";font-weight:500;font-size:10px;margin: 8px 0px 0px 0px;}
+.photoGallerySlider-box-container-alpha .photoGallerySliderItemDate a {padding: 0px 10px 0px 0px;}
+
+.photoGallerySlider-box-container-bravo {width:600px;margin:10px 0px 25px 0px;height:418px;overflow:hidden;}
+.photoGallerySlider-box-container-bravo .photogallerySliderItem {float:left;height:418px;width:600px;padding: 0px 0px 0px 0px !important;}
+.photoGallerySlider-box-container-bravo .photoGallerySliderItemTitle {display:block;float:left;width:100%;font-family:"Open Sans";font-size:12px;font-weight:600;text-transform:uppercase;line-height:1.1em;text-align: center;margin: 3px 0px 0px 0px;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-bravo .photoGallerySliderItemTitle a {display:block;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-bravo .photoGallerySliderItemDate {display:block;float:left;width:100%;text-align:center;color:#898989;font-family:"Open Sans";font-weight:500;font-size:9px;margin: 2px 0px 0px 0px;}
+.photoGallerySlider-box-container-bravo .photoGallerySliderPostItem li {position:relative;z-index:0;width:600px;height:418px;}
+
+.photoGallerySlider-box-container-delta {width:640px;margin:0px auto;height:220px;overflow:hidden;}
+.photoGallerySlider-box-container-delta .photogallerySliderItem {float:left;height:200px;width:90px;padding: 0px 5px 0px 0px !important;}
+.photoGallerySlider-box-container-delta .photoGallerySliderItemTitle {display:block;float:left;width:100%;font-family:"Open Sans";font-size:12px;font-weight:600;text-transform:uppercase;line-height:1.1em;text-align: center;margin: 3px 0px 0px 0px;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-delta .photoGallerySliderItemTitle a {display:block;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-delta .photoGallerySliderItemDate {display:block;float:left;width:100%;text-align:center;color:#898989;font-family:"Open Sans";font-weight:500;font-size:9px;margin: 2px 0px 0px 0px;}
+
+.photoGallerySlider-box-container-epsilon {width:960px;margin:0px auto;height:220px;overflow:hidden;}
+.photoGallerySlider-box-container-epsilon .photogallerySliderItem {float:left;height:200px;width:90px;padding: 0px 5px 0px 0px !important;}
+.photoGallerySlider-box-container-epsilon .photoGallerySliderItemTitle {display:block;float:left;width:100%;font-family:"Open Sans";font-size:12px;font-weight:600;text-transform:uppercase;line-height:1.1em;text-align: center;margin: 3px 0px 0px 0px;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-epsilon .photoGallerySliderItemTitle a {display:block;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-epsilon .photoGallerySliderItemDate {display:block;float:left;width:100%;text-align:center;color:#898989;font-family:"Open Sans";font-weight:500;font-size:9px;margin: 2px 0px 0px 0px;}
+
+.photoGallerySlider-box-container-zeta {width:600px;margin:0px auto;height:220px;overflow:hidden;}
+.photoGallerySlider-box-container-zeta .photogallerySliderItem {float:left;height:200px;width:90px;padding: 0px 5px 0px 0px !important;}
+.photoGallerySlider-box-container-zeta .photoGallerySliderItemTitle {display:block;float:left;width:100%;font-family:"Open Sans";font-size:12px;font-weight:600;text-transform:uppercase;line-height:1.1em;text-align: center;margin: 3px 0px 0px 0px;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-zeta .photoGallerySliderItemTitle a {display:block;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-zeta .photoGallerySliderItemDate {display:block;float:left;width:100%;text-align:center;color:#898989;font-family:"Open Sans";font-weight:500;font-size:9px;margin: 2px 0px 0px 0px;}
+
+.zvents-box-container {
+	width:640px;
+	height:90px;
+	margin-bottom:10px;
+	margin-top:10px;
+	overflow:hidden;
+}
+
+#zvents-list-head {
+	font-family: "Trebuchet MS",Tahoma;
+	font-size:18px;
+	line-height:20px;
+	color:#ffffff;
+	text-transform:uppercase;
+	background-color:#ed2b86;
+	padding-top:3px;
+	cursor:pointer;
+	float:left;
+	margin:0px 10px 0px 20px;
+	height:90px;
+	width:90px;
+	overflow:hidden;
+	padding:5px 5px 0px 5px;
+	font-weight:bold;
+}
+
+.photoGallerySliderPostDesc {position: relative;color:#fff;background-color:rgba(0,0,0,0.6);z-index: 100;height:50px;width:600px;top:-51px;overflow:hidden;padding:5px 30px 0px 30px;text-align:center;}
+
+/* Charlie 960px width */
+.photoGallerySlider-box-charlie {height:300px;width:954px;margin:0px auto;}
+.jcarousel-skin-charlie .jcarousel-next-horizontal {
+	position: relative;
+	display: block;
+	top: -101px;
+	left: 914px;
+	width: 40px;
+	height: 50px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	z-index: 1000;
+	background-image: url(../img/nextArrow.png);
+}
+.jcarousel-skin-charlie .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+}
+.jcarousel-skin-charlie .jcarousel-next-horizontal:hover {
+	background-position: -1px 0;
+}
+.jcarousel-skin-charlie .jcarousel-next-horizontal:active {
+	background-position: -3px 0;
+}
+.jcarousel-skin-charlie .jcarousel-prev-horizontal {
+	position: absolute;
+	width: 40px;
+	height: 50px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	top:250px;
+	left:0px;
+	z-index: 1000;
+	background-image: url(../img/prevArrow.png);
+}
+.jcarousel-skin-charlie .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(next-horizontal.png);
+}
+.jcarousel-skin-charlie .jcarousel-prev-horizontal:hover {
+	background-position: 1px 0;
+}
+.jcarousel-skin-charlie .jcarousel-prev-horizontal:active {
+	background-position: 3px 0;
+}
+
+.photoGallerySlider-box-container-charlie {width:954px;margin:10px 0px 25px 0px;height:300px;overflow:hidden;}
+.photoGallerySlider-box-container-charlie .photogallerySliderItem {float:left;height:300px;width:954px;padding: 0px 0px 0px 0px !important;}
+.photoGallerySlider-box-container-charlie .photoGallerySliderItemTitle {display:block;float:left;width:100%;font-family:"Open Sans";font-size:12px;font-weight:600;text-transform:uppercase;line-height:1.1em;text-align: center;margin: 3px 0px 0px 0px;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-charlie .photoGallerySliderItemTitle a {display:block;padding:0px 5px 0px 0px;}
+.photoGallerySlider-box-container-charlie .photoGallerySliderItemDate {display:block;float:left;width:100%;text-align:center;color:#898989;font-family:"Open Sans";font-weight:500;font-size:9px;margin: 2px 0px 0px 0px;}
+.photoGallerySlider-box-container-charlie .photoGallerySliderPostItem li {position:relative;z-index:0;width:954px;height:300px;}
+
+.jcarousel-skin-charlie .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-charlie .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-charlie .jcarousel-prev-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+
+.jcarousel-skin-charlie .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-charlie .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-charlie .jcarousel-next-disabled-horizontal:active {
+	cursor: default;
+	background-position: 0 0;
+}
+.photoGallerySliderPostDescCharlie {position: relative;color:#fff;background-color:rgba(0,0,0,0.6);z-index: 100;height:50px;width:954px;top:-51px;overflow:hidden;padding:10px 40px;text-align:center;}
+
+.topViewedGalleryTitle { text-align:center;margin:3px 0px;font-family:Open Sans;font-size:12px;width:150px;line-height:14px;max-height:30px;overflow:hidden;padding-bottom:3px;}
+.topViewedGalleryViews {text-align:center;font-family:Open Sans;font-size:10px;line-height:10px;}

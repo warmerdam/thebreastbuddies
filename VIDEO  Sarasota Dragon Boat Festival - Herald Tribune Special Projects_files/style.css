@@ -1,0 +1,2997 @@
+/*
+Theme Name: HT Niche Sites - 2012
+Theme URI: http://www.heraldtribune.com
+Description: Theme for all HeraldTribune Niche Sites updated for 2012.
+Author: David Adkins / Dak Le / Patrick Carroll
+Version: 2.0
+Tags: heraldtribune
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	/*vertical-align: baseline;*/
+	background-color:transparent;
+}
+
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+DIV { 
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin:0;
+	padding:0; 
+}
+
+.placeholder-container {
+	width: 140px;
+	height: 108px;
+	background-color: #cccccc;
+	border: 1px solid #000000;
+}
+/* = EASY EDIT Layout
+-------------------------------------------------------------- */
+
+body {
+	background-color:#ffffff;
+	padding-top:50px !important;
+}
+
+.font1 {
+	font-family:"Trebuchet MS",Verdana, Arial;
+}
+
+.fontbold {
+	font-weight:bold;
+}
+
+#wrapper {
+	width:980px;
+	margin:0px auto;
+	background-color:#ffffff;
+}
+
+/* = HEADER Layout
+-------------------------------------------------------------- */
+
+#full-width-wrapper {
+	width:980px;
+	margin: 0px auto;
+}
+
+#header-container {
+	width:100%;
+	height:36px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:10000000;
+}
+
+#header-drop-shadow {
+	width:100%;
+	position:fixed;
+	height:9px;
+	top:35px;
+	left:0px;
+	z-index:9999999;
+}
+
+#header {
+	width:980px;
+	margin:0px auto;
+	height:36px;
+}
+
+#print-header {
+	display:none;
+}
+
+#top-leaderboard {
+	margin:0px auto;
+	text-align:center;
+}
+
+#bottom-leaderboard {
+	margin:0px auto;
+	text-align:center;
+	padding: 12px 0px 12px 0px;
+}
+
+/* fix for silly browser problems */
+#pencil, #pencil div, #pencil div div, #pencil div div div, #pencil div div div div {
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	margin:0px auto;
+	/* background-color:#000000; */
+}
+
+#logo { 
+	float:left;
+	padding:5px 10px 0px 20px;
+	height:36px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+	font-size:24px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+
+#share-tools {
+	float:left;
+	margin-top:10px;
+}
+#share-tools a {
+	margin-right:8px;
+}
+
+#header-functions {
+	float:left;
+}
+
+#share-search-right {
+	float:right;
+}
+
+#search-registration {
+	width:595px;
+	overflow:hidden;
+	height:70px;
+}
+
+#search-box {
+	float:left;
+	margin-top:10px;
+	color:black;
+	text-transform:uppercase;
+	font-family: "Trebuchet MS", Arial;
+	font-size:11px;
+	font-weight:bold;
+	
+}
+
+input#s {
+	width:125px;
+	color:#676a70;
+	height:16px;
+	border:none;
+	padding-left:2px;
+}
+input#searchsubmit {
+	vertical-align:top;
+	background-color:#ffffff;
+	color:#000000;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	border:none;
+}
+
+#registration {
+    position:relative;
+	float:right;
+	margin-top:8px;
+    background-color:#000000;
+	padding:3px;
+	width:250px;
+    overflow:hidden;
+}
+
+#header-avatar {
+	float:left;
+	padding-right:4px;
+	padding-top:2px;
+}
+#header-welcometext {
+	float:left;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-family:"Trebuchet MS", Arial;
+	font-size:13px;
+}
+#header-welcometext span {
+	font-size:18px;
+	font-weight:bold;
+}
+
+#reg-top {
+}
+#reg-bottom {
+    float: left;
+    position: absolute;
+    left: 50px;
+    bottom: 2px;
+    text-transform:uppercase;
+	font-family:"Trebuchet MS", Arial;
+	color:#ffffff;
+	font-size:10px;
+}
+
+#reg-bottom a {
+	text-transform:uppercase;
+	font-family:"Trebuchet MS", Arial;
+	color:#ffffff;
+	font-size:11px;
+}
+
+/* Style the Nav Menus */
+#nav-header {
+	margin:12px 0px 0px 10px;
+	float:left;
+}
+.nav-menu {
+	font-family:"Open Sans", sans-serif;
+	color:#ffffff;
+	font-size:14px;
+}
+.menu {
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+}
+.menu li {
+	display:inline;
+	margin-right:15px;
+}
+.menu li a {
+	text-decoration:none;
+	color:#ffffff;
+}
+
+.menu li a:hover {
+	text-decoration:underline;
+}
+
+
+
+
+/* Top level Unordered list */
+ul.dropdown {
+	list-style:none;
+	float:left;
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+ 
+ul.dropdown li{
+	float:left; /* makes horiz list */
+	z-Index:1000;
+	position:relative; /* hey Submenu ULs, appear below! */
+}
+ 
+ul.dropdown li a {
+	padding:10px; /*space the items, occupy entire height too.*/
+	text-decoration:none;
+	color:#ffffff;
+}
+
+ul.dropdown li ul li a {
+	padding:12px; /*space the items, occupy entire height too.*/
+	text-decoration:none;
+	color:#ffffff;
+	background-color: #444;
+}
+ul.dropdown li a:hover, ul.dropdown li ul li a:hover {
+	text-decoration:underline;
+}
+ 
+/* Displays the link as blocks. */
+ul.dropdown li ul a {
+	display:block;
+}
+ 
+/* sub menus!!  */
+ 
+ul.dropdown ul {
+	list-style: none;
+	margin:0; /* Appear just below the hovering list */
+	padding:0;
+	width:180px; /* specify the width. */
+	position:absolute; /* needed */
+	left:-1px;
+	z-index:500; /* specify the order */
+}
+ 
+ul.dropdown li ul {
+	top:20px; /* Positioning:Calc with top level horz list height */
+}
+*+html ul.dropdown li ul  {
+     top:14px!important;
+}
+
+ul.dropdown ul ul {
+	top:0;
+	left:100%; /* Position the sub menus to right. */
+}
+ 
+ul.dropdown ul li {
+	z-index:501;
+	width:100%;
+}
+ 
+/* Drop Down! */
+ 
+/* Hide all the dropdowns (submenus) */
+ul.dropdown ul,
+ul.dropdown li:hover ul ul,
+ul.dropdown ul li:hover ul ul
+{ display: none; }
+ 
+/* Display the submenus only when li are hovered */
+ul.dropdown li:hover ul,
+ul.dropdown ul li:hover ul ,
+ul.dropdown ul li ul li:hover ul
+{ display: block;}
+ 
+ul.dropdown li * a:hover {
+	/* Change color of links when hovered */
+	background: #666;
+}
+
+
+
+
+
+
+
+
+
+
+.addthis_toolbox {
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+/* = SECTION FRONT Divs Layout
+-------------------------------------------------------------- */
+#main {
+	width:960px;
+	margin:0px auto;
+	position:relative;
+}
+
+#container {
+	width:640px;
+	float:left;
+	margin-top:10px;
+}
+
+
+/* = SECTION FRONT DIVS Layout
+-------------------------------------------------------------- */
+
+.section-front-container {
+	float:left;
+	width:642px;
+	overflow:hidden;
+}
+.section-front {
+	float:left;
+	width:642px; /* 2px more than max widget width, in case of borders! */
+	margin-right:10px;
+}
+
+#wide-column {
+	width:960px;
+	overflow:hidden;
+}
+
+.sf-widget {
+	/* float:left;  FLOAT:LEFT MUST BE KEPT FOR SECTION FRONT WIDGET TO FUNCTION */
+	margin-top:10px;
+	background-color:#ffffff;
+	/* border:1px solid #cccccc; */
+	font-family:Verdana, Arial;
+	font-size:12px;
+}
+
+.sf-widget-title {
+	font-weight:bold;
+	background-color:#cccccc;
+	padding:3px;
+}
+
+.sf-widget ul {
+	margin:0px;
+	padding:5px;
+	list-style-type:none;
+}
+
+.sf-widget ul li {
+	margin:0px;
+	padding:0px;
+}
+
+
+/* = RIGHT RAIL Layout
+-------------------------------------------------------------- */
+
+#right-rail-container {
+	position:relative;
+	width:300px;
+margin-right:10px;
+	/*margin:10px;*/
+	float:right;
+}
+
+
+#right-rail {
+	width:300px;
+	/*margin:10px;
+	float:right;*/
+}
+
+.widget-container {
+	margin-top:10px;
+	/* border:1px solid #cccccc; */
+	font-family:Verdana, Arial;
+	font-size:12px;
+	line-height:14px;
+}
+.widget-container ul
+{
+	padding-left:5px;
+	padding-bottom:5px;
+}
+.widget-container li
+{
+	padding-top:5px !important;
+}
+
+.widget-title {
+	font-weight:bold;
+	font-size:18px;
+        color:#000000;
+	padding:6px;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-family:"Trebuchet MS", Arial;
+}
+
+#right-rail ul li div h3.widget-title {
+	font-size:18px;
+        text-transform:uppercase;
+	padding:3px;
+	font-weight:normal;
+}
+
+#screen-width-column {
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+
+#screen-width-column .sf-widget {
+	margin:0px;
+}
+
+
+/* = FOOTER Layout
+-------------------------------------------------------------- */
+
+#footer {
+	clear:both;
+	text-align:center;
+}
+
+#footer a {
+	color:#aaaaaa;
+	font-family:"Trebuchet MS", Arial;
+	font-size:13px;
+}
+
+#footer-include {
+	margin-top:20px;
+}
+
+
+
+/* = LEADERBOARD PROMO Layout
+-------------------------------------------------------------- */
+
+#top-leaderboard-container {
+	width:100%;
+	padding:10px;
+}
+
+#top-leaderboard {
+	margin:0px auto;
+	text-align:center;
+	width:980px;
+}
+
+#leaderboard-ad {
+	float:left;
+	width:728px;
+}
+
+#leaderboard-promo li {
+	float:left;
+	width: 220px;
+	height:90px;
+	text-align:left;
+	overflow:hidden;
+	color:#ffffff;
+	background-color:#000000;
+	font-family:"Trebuchet MS", Arial;
+	font-size:12px;
+}
+
+#leaderboard-promo li a {
+	text-decoration:none;
+	color:#ffffff;
+	font-family:"Trebuchet MS", Arial;
+	font-size:12px;
+}
+
+#leaderboard-promo .widget-container {
+	margin:0px;
+	padding:0px;
+	padding-left:10px;
+	background-color:#000000;
+	font-family:"Trebuchet MS", Arial;
+	font-size:12px;
+	line-height:12px;
+}
+
+#leaderboard-promo li h3 {
+	clear:none;
+	color:#b7b7b7;
+	padding:0px;
+	margin:0px;
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial;
+	padding-bottom:2px;
+}
+
+#leaderboard-promo li img {
+	float:left;
+	margin:0px;
+	padding:0px;
+	padding-right:3px;
+	background-color:#000000;
+}
+
+
+
+/* = POSTS Layout
+-------------------------------------------------------------- */
+
+.post .post-content, .post .post-image {
+	
+}
+
+.post .post-image {
+	margin-right:30px;
+	*padding-right:15px;
+	width:140px;
+	*width:144px;
+	float:left;
+	overflow: hidden;
+	position:relative;
+}
+.post .post-image .map-icon-overlay {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.post .post-image .map-icon-overlay-search {
+	position:absolute;
+	top:2px;
+	left:-25px;
+}
+.post .post-image img {
+	/* border:1px solid #000000; */
+}
+
+.post .post-content img {
+	float:left;
+	margin-right: 30px;
+}
+.post .post-content {
+	padding-right:30px;
+	*padding-right:0px;
+	width:100%;
+	float:left;
+	font-family:"Georgia";
+}
+
+.post-content .first-tag {
+	font-family:"Trebuchet MS";
+	text-transform:uppercase;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.post-content .first-tag a {
+	text-decoration:none;
+	font-weight:bold;
+}
+.post-content .first-tag a:hover {
+	text-decoration:underline;
+}
+
+.post-content .first-tag span {
+	font-size:10px;
+	color:#666666;
+}
+
+.post-content h2 a {
+	color:#000000;
+	text-decoration:none;
+	line-height:22px;
+	font-size:20px;
+	font-family:"Trebuchet MS", Arial;
+}
+.h2 a {
+	color:#000000;
+	text-decoration:none;
+	line-height:22px;
+	font-size:20px;
+	font-family:"Trebuchet MS", Arial;
+}
+.post-content h2 a:hover {
+	text-decoration:underline;
+}
+
+.post-content small {
+}
+
+.post-content .entry {
+	line-height:20px;
+	font-size:16px;
+	font-family:Georgia;
+}
+
+.post-content .entry a {
+}
+
+.post-content .postmetadata {
+	font-size:10px;
+	color:#666666;
+	text-transform:uppercase;
+	font-family:"Trebuchet MS";
+	margin-top:3px;
+}
+
+.post-content .postmetadata a {
+	color:#666666;
+	text-decoration:none;
+}
+.post-content .postmetadata a:hover {
+	text-decoration:underline;
+}
+
+
+.entry-content {
+	float:left;
+	width:480px;
+	font-family:"Georgia", Arial;
+	line-height: 22px;
+	font-size:16px;
+}
+
+.entry-content img {
+	border:none;
+}
+
+.alignleft
+{
+	float:left;
+	padding-right:10px;
+}
+.alignright
+{
+	float:right;
+	padding-left:10px;
+}
+.wp-caption-text
+{
+	padding:5px;
+	*width:287px;
+	font-size:12px;
+	font-family: "Trebuchet MS";
+	color:#898989;
+	line-height: 14px;
+}
+.first-image-caption {
+	margin-bottom:15px;
+}
+.entry-content2 {
+	font-family:"Trebuchet MS", Georgia, Arial;
+	float:left;
+	width:640px;
+}
+
+.entry-content2 p {
+	margin-bottom:20px;
+}
+
+.entry-content p {
+	margin-bottom:20px;
+}
+
+.entry-content-right {
+	font-size:9px;
+	line-height:12px;
+	float:right;
+	width:120px;
+	padding-top:12px;
+}
+
+.post-spacer {
+	clear:both;
+	padding-top:8px;
+	margin-bottom:8px;
+}
+.post-spacer-search {
+	clear:both;
+	padding-top:2px;
+	margin-bottom:2px;
+	width:350px;
+}
+
+#post-shortcode-0 {
+	font-family:"Trebuchet MS", Arial;
+	font-weight:bold;
+	font-size:18px;
+	padding-bottom:15px;
+}
+
+.more_post {
+	padding-left:20px;
+}
+
+.shareTools {
+	padding-top:2px;
+	padding-bottom:13px;
+	width:100%;
+}
+.shareTools a{
+	text-decoration: none;
+	font-size:10px;
+	position:relative;
+	top:-6px;
+}
+.shareTools a img{
+	text-decoration: none;
+	font-size:10px;
+	position:relative;
+	top:6px;
+}
+.shareToolsHead {
+	color:#666666;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:bold;
+}
+.shareToolsFoot {
+	padding-bottom:12px;
+}
+.shareToolsHR {
+	color:#666666;
+	height:1px;
+}
+.share {
+	padding-top:5px;
+	float:left;
+}
+.related {
+	padding-top:5px;
+	float:left;
+	border-top:1px solid #c7c8ca;
+}
+
+.related_article {
+	font-size:12px;
+	color:#000000;
+	margin-top:5px;
+	margin-bottom:15px;
+	font-family:Verdana;
+	line-height:14px;
+}
+
+.related_article a {
+	font-weight:bold;
+}
+
+.ArticleComments {
+	font-size: 18px;
+	width: 660px;
+	
+/*
+	background-color:#d5d6d8;
+	margin-bottom:20px;
+*/
+	font-family:"Trebuchet MS", Georgia, Arial !important;
+
+}
+
+
+
+.BizArticleComments {
+	font-size: 12px !important;
+	width: 530px;
+	padding: 12px;
+	margin-left:10px;
+	background-color:#d5d6d8;
+	margin-bottom:20px;
+	font-family:"Trebuchet MS", Georgia, Arial !important;
+}
+.BizArticleComments p {
+	font-weight:bold;
+}
+.BizArticleComments input {
+	margin-top: 5px !important;
+	color:white;
+	margin:0px;
+	padding:0px;
+	border:none;
+	height:20px !important;
+	float:right;
+	width:70px !important;
+	margin-right:10px;
+}
+.BizArticleComments span {
+	font-weight:normal;
+}
+textarea#bizcomment{
+	width: 500px;
+	height: 175px;
+	padding-left: 2px;
+	font-size: 12px;
+}
+.similarStoriesContent {
+	overflow:hidden;
+	border-top:1px  solid #959595;
+	border-bottom:1px  solid #959595;
+	padding:6px 0px 14px 0px;
+	margin-top:14px;
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	color:#959595;
+}
+
+.related-posts-image {
+	width: 153px;
+	height: 111px;
+	overflow:hidden;
+}
+
+.related-posts li {
+	float:left;
+	width:155px;
+	margin:5px 3px 0px 2px;
+	padding: 0px;
+}
+.related-posts li img {
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+.related-posts li a, .related-posts li a:hover, .related-posts li a:visited {
+	font-family:"Trebuchet MS";
+	font-size:18px;
+	color:#000000;
+}
+.ArticleCommentsLogin {
+	font-weight:bold;
+	font-size:15px !important;	
+}
+.articleLogin {
+	font-size:14px;
+	float:right;
+	margin-bottom:10px;
+}
+.articleLogin2 span{
+	font-size:9px !important;
+	color:black !important;
+	float:right;
+}
+.articleLogin2 a{
+	font-size:10px !important;
+}
+.ArticleCommentsLogin a {
+	text-decoration:none;
+}
+.ArticleComments p {
+	font-weight:bold;
+}
+.ArticleComments input#submit {
+	margin-top: 5px !important;
+	color:white;
+	margin:0px;
+	padding:0px;
+	border:none;
+	height:20px !important;
+	float:right;
+	width:70px !important;
+	margin-right:26px;
+}
+.ArticleComments span {
+	font-weight:normal;
+}
+textarea#comment{
+	width: 630px;
+	height: 150px;
+	padding-left: 2px;
+	font-size: 12px;
+}
+.articleSubmittedComments {
+	padding-top:10px;
+}
+.articleSubmittedBizComments {
+	margin-left:12px;
+	padding-top:10px;
+	width:600px;
+}
+.commentListHeader {
+	font-family:"Trebuchet MS";
+	color:#000000;
+	font-size:18px;
+	font-weight:bold;
+	padding-left:5px;
+	margin-bottom:14px;
+}
+.commentListHeader span{
+	font-weight:bold;
+	font-size:18px;
+}
+.MoreArticleNav {
+	padding-top:5px;
+	text-align:right;
+}
+.commentsFooterText {
+	font-size: 10px !important;
+	font-weight:normal !important;
+	display:block;
+	line-height:10px;
+	padding:5px 20px 10px 0px;
+}
+.articleAuthor {
+	font-weight:bold;
+}
+.articleTitle, #main h1 {
+	
+	font-size:36px;
+	padding-bottom:20px;
+	font-family:Georgia, "Trebuchet MS", Arial;
+}
+.articleBreadcrumb {
+	padding-top:5px;
+	font-size: 12px;
+	text-transform:uppercase;
+	padding-bottom:12px;
+}
+.articleAuthorMain {
+	float:left;
+	font-size: 12px;
+	line-height:14px;
+	color:#707173;
+	font-family:"Trebuchet MS", Georgia, Arial;
+}
+.articlePostedDate {
+	float:left;
+	color:#707173;
+	font-size: 12px;
+	line-height:14px;
+	margin-bottom:10px;
+	margin-left:4px;
+}
+.articleCommentSort {
+	padding-top:5px;
+	font-size:10px;
+}
+.articleCommentSort span {
+	font-size:9px;
+	color: black;
+}
+.articleCommentsNotLoggedIn {
+	padding-left:12px;
+	margin-bottom:10px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.articleLoginCheckHeader {
+	float:right;
+}
+.subCommentAuthor {
+	font-family:Georgia;
+	line-height: 18px;
+	background-color: #c2c2c2;
+	margin-bottom: 3px;
+	overflow:hidden;
+}
+.subCommentAuthor li{
+	font-style: normal !important;
+}
+.subCommentAuthorName {
+	float:left;
+	font-size: 12px;
+	font-weight:bold;
+	color: #000000;
+	margin-left:5px;
+}
+.subCommentAuthorDate {
+	float:left;
+	font-size:10px;
+	margin-left:1px;
+	padding-top: .5px;
+	color: #000000;
+}
+.subReviewAuthorDate {
+	float:left;
+	font-style:italic;
+	font-size:12px;
+	margin-left:5px;
+	padding-top: 2px;
+	color: #000000;
+}
+.subCommentAuthorLinks {
+	float:left;
+	text-transform:uppercase;
+	font-family:"Trebuchet MS";
+	float:right;
+	font-size: 12px;
+	font-weight:normal;
+	color: #000000;
+}
+.subBizCommentAuthor {
+	font-family:"Trebuchet MS";
+	text-transform:uppercase;
+	font-size: 12px;
+	line-height: 18px;
+}
+.subBizCommentAuthor span{
+	font-size: 10px;
+	margin-bottom:5px;
+	color:#666666;
+	font-weight:normal;
+}
+.subBizCommentAuthor li{
+	font-style: normal !important;
+}
+
+.aComment{
+	width:660px;
+	padding-top:5px;
+	padding-bottom:10px;
+}
+.aBizComment{
+	width:530px;
+	padding-top:10px;
+	padding-bottom:13px;
+	border-top:1px solid #c7c8ca;
+}
+.leftBizComment{
+	float:left;
+	width:60px;
+	padding-left:20px;
+}
+.the-biz-comment {
+	float:left;
+	width:465px;
+	padding-left:10px;
+	padding-right:80px;
+}
+.leftComment{
+	float:left;
+	width:60px;
+	padding-left:20px;
+}
+.the-comment {
+	float:left;
+	width:630px;
+}
+.the-review {
+	float:left;
+	width:630px;
+	background-color:#f7f7f7;
+	padding-left:5px;
+	padding-top:5px;
+}
+.commentText {
+	padding-top:5px;
+	font-size: 12px;
+	font-weight: normal !important;
+	color:black;
+	text-transform:none;
+	line-height:16px;
+	width:95%;
+	float:left;
+}
+
+#content {
+	font-family:"Trebuchet MS", Georgia, Arial;
+}
+.ArticleAdditional {
+	font-size: 12px;
+	font-family:"Trebuchet MS", Georgia, Arial;
+	padding-bottom:8px;
+	line-height: 17px;
+	width:120px;
+	overflow:hidden;
+	border-bottom:1px solid #C7C8CA;
+}
+
+.premiumListing {
+	background-color:#FBE2BD;
+	padding:5px 0px 0px 15px;
+	font-family: "Georgia" !important;
+}
+.premiumListing  h2 a {font-family: "Georgia" !important;}
+.premiumListing .entry {font-family: "Georgia" !important;}
+.premiumListing .post-content {width:77%}
+.regularListing .post-content {width:77%}
+.business-listing-results
+{
+  width:323px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-family:"Trebuchet MS", Georgia, Arial;
+}
+.business-listing-results-search
+{
+  width:250px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-family:"Trebuchet MS", Georgia, Arial;
+}
+#busListingSearchContainer {
+	overflow:auto;
+	color:#F74B25;
+	background-image: url('/wp-content/themes/ht-niche-2012/images/search-BG.jpg');
+	background-repeat: no-repeat;
+	height:125px;
+	width:640px;
+}
+#busListingSearchOptions {position:relative;top:87px;left:25px;width:600px;}
+.directory-results
+{
+	border-bottom:1px solid #c7c8ca;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+
+.business-listing-results-right
+{
+  float:right;
+  width:100px;
+  padding-top: 12px;
+  font-family:"Trebuchet MS", Georgia, Arial;
+  font-weight:normal;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform:uppercase;
+  position:relative;
+}
+.business-listing-results-right-search
+{
+  float:right;
+  width:115px;
+  padding-top: 8px;
+  padding-right:20px;
+  font-family:"Trebuchet MS", Georgia, Arial;
+  font-weight:regular;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform:uppercase;
+  position:relative;
+}
+
+.post .business-listing {
+	float:left !important;
+	width:300px !important;
+	padding:0px;
+}
+
+.post .reg-listing {
+	width:73% !important;
+}
+.business-listing-info 
+{
+	width:140px;
+	float:right;
+	padding-bottom: 12px;
+ 	padding-top: 12px;
+ 	line-height:18px;
+	font-size:12px;
+	font-family:Georgia;
+}
+
+.add_list_form {
+	display:none;
+	position:absolute;
+	top:-55px;
+	right:0px;
+	border:1px solid #c7c8ca;
+	background-color:#ffffff;
+	width:380px;
+	padding:7px;
+}
+.add_list_option_title {
+	display:inline-block;
+	width:100px;
+	font-weight:bold;
+	vertical-align:top;
+	margin-bottom:3px;
+}
+
+.field_hidden {
+	display:none;
+}
+
+.add_list_option_field {
+	display:inline-block;
+	margin-bottom:3px;
+}
+
+.add_list_option_field input.text, .add_list_option_field select, .add_list_option_field textarea  {
+	font-size:11px;
+	font-family:Verdana;
+}
+
+#SearchHeader
+{
+  padding-top:12px;
+  border-top-style:solid;
+  border-top-width:thin;
+  padding-bottom:10px;
+  border-top-color: #D8D8D8;
+  font-weight:bold;
+  font-size: 18px;
+  width:623px;
+  line-height: 19px;
+  font-family:"Trebuchet MS", Georgia, Arial;
+}
+#SearchCapsule
+{
+  width:623px;
+  font-weight:normal;
+  font-size: 11px;
+  line-height: 14px;
+  font-family:"Trebuchet MS", Georgia, Arial;
+  padding-bottom:12px;
+}
+.SearchAddress
+{
+  font-family:"Trebuchet MS", Georgia, Arial;
+  font-weight:regular;
+  font-size: 12px !important;
+  line-height: 11px;
+}
+.SearchMore
+{
+  font-weight:regular;
+  font-size: 12px;
+  line-height: 16px;
+}
+#SearchHideMap
+{
+  font-weight:regular;
+  font-size: 11px;
+  line-height: 16px;
+  padding-bottom:12px;
+}
+#SearchHideMap a
+{
+  text-decoration:none;
+  font-family:"Trebuchet MS", Georgia, Arial;
+}
+#SearchFilter
+{
+  font-family:"Trebuchet MS", Georgia, Arial;
+  font-weight:regular;
+  font-size: 11px;
+  line-height: 16px;
+  width:625px;
+  padding-top:5px;
+  color:#666666;
+}
+#SearchFilterLeft
+{
+  float:left;
+}
+#SearchFilterCenter
+{
+  float:left;
+  padding-left:40px;
+}
+
+.loginform, #registerform {
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial;
+	width:350px;
+	margin-top:40px;
+}
+
+.loginform input, #registerform input {
+	font-size:16px;
+	margin-bottom:20px;
+	width:300px;
+}
+
+.loginform input.custom_checkbox, .loginform input.checkbox, #registerform input.custom_checkbox {
+	width:25px;
+}
+
+.loginform label, #registerform label {
+	width:300px;
+}
+
+#clnav {
+	position:absolute;
+	top:40px;
+	left:5px;
+}
+
+#clnav li {
+	display:inline;
+	margin-right:10px;
+	font-family:"Trebuchet MS", Arial;
+}
+
+#login_error, #main p.message {
+	margin-top:20px;
+}
+
+/* STAR RATING STYLING */
+
+.rating{
+	width:80px;
+	height:16px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	position:relative;
+	background: url(/wp-content/themes/ticket/images/star-matrix.gif) no-repeat 0 0;
+	float:right;
+	margin-right:10px;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.nostar {background-position:0 0}
+.onestar {background-position:0 -16px}
+.twostar {background-position:0 -32px}
+.threestar {background-position:0 -48px}
+.fourstar {background-position:0 -64px}
+.fivestar {background-position:0 -80px}
+
+.nostar2 {background-position:0 0;}
+.onestar2 {background-position:0 -96px;}
+.twostar2 {background-position:0 -112px;}
+.threestar2 {background-position:0 -128px}
+.fourstar2 {background-position:0 -144px}
+.fivestar2 {background-position:0 -160px}
+
+ul.rating li {
+	cursor: pointer;
+ /*ie5 mac doesn't like it if the list is floated\*/
+	float:left;
+	/* end hide*/
+	text-indent:-999em;
+}
+ul.rating li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.rating li.one a {left:0}
+ul.rating li.two a {left:16px;}
+ul.rating li.three a {left:32px;}
+ul.rating li.four a {left:48px;}
+ul.rating li.five a {left:64px;}
+
+ul.rating2 li a:hover {
+	z-index:2;
+	width:80px;
+	height:16px;
+	overflow:hidden;
+	left:0;
+	background: url(/wp-content/themes/ticket/images/star-matrix.gif) no-repeat 0 0
+}
+ul.rating2 li.one a:hover {background-position:0 -96px;}
+ul.rating2 li.two a:hover {background-position:0 -112px;}
+ul.rating2 li.three a:hover {background-position:0 -128px}
+ul.rating2 li.four a:hover {background-position:0 -144px}
+ul.rating2 li.five a:hover {background-position:0 -160px}
+
+/* SEARCH BOX STYLING */
+
+.searchbox-container {
+
+}
+
+.tab-container {
+	padding-top:0px;
+	text-align:center;
+	margin:0px auto;
+}
+
+
+ul.SearchBoxtabs {
+	margin:5px 0px 0px 0px !important;
+	padding:0px !important;
+}
+ul.SearchBoxtabs li {
+	list-style:none;
+	display:inline;
+	margin:0px;
+	padding:0px;
+}
+ul.SearchBoxtabs li a {
+	background-color:#a8d8ee;
+	display:inline-block;
+	height:18px;
+	color:#000000;
+	padding:7px 10px 0px 10px;
+	margin:0px 10px 0px 0px;
+	text-decoration:none;
+	font-size:12px;
+    	font-family: "Trebuchet MS";
+	font-weight:bold;
+	text-transform:uppercase;
+}
+ul.SearchBoxtabs li a:hover {
+	background-color:#00aed9;
+}
+ul.SearchBoxtabs li a.current {
+	background-color:#00aed9;
+}
+
+
+.SearchBoxtabContent
+{
+	background-color:#00aed9;
+	font-family:Georgia;
+	height:auto;
+	margin-bottom:10px;
+	width:inherit;
+}
+
+.SearchBoxtabContent ul {
+	margin:0px;
+}
+.SearchBoxtabContent ul li {
+	list-style:none;
+	border-bottom:1px solid #d6dde0;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size:13px;
+}
+.SearchBoxtabContent input.map {
+	width:270px;
+	height:18px;
+	font-size:10px;
+	border:1px solid #000000;
+}
+.SearchBoxtabContent input
+{
+	width:270px;
+	height:18px;
+	font-size:12px;
+	border:none;
+}
+.SearchBoxtabContent input.mapsubmit {
+	margin-top: 5px !important;
+	color:white;
+	margin:0px;
+	padding:0px;
+	border:none;
+	height:20px !important;
+	width:150px !important;
+}
+.SearchBoxtabContent select
+{
+	color:gray;
+	font-size:10px;
+	margin-right:7px;
+}
+.SearchBoxSearchLeft
+{
+	padding-left:35px;
+	margin-bottom:10px;
+	margin-top:5px;
+	font-size:12px;
+	float:left;
+	font-family: "Trebuchet MS";
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.SearchBoxRefine
+{
+	clear:both;
+	padding-top:5px;
+	padding-left:35px;
+	padding-bottom:5px;
+	background-color: #a8d8ee;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:10px;
+	font-family:"Trebuchet MS";
+
+}
+.SearchBoxrefineLeft
+{
+	float:left;
+	width:55%;
+	font-weight:bold;
+	font-size:10px;
+	padding-left:0px;
+	padding-bottom:5px;
+}
+.SearchBoxrefine span
+{
+	margin-top:20px;
+}
+.SearchBoxrefineOptions
+{
+	color:Gray;
+	font-family:"Trebuchet MS";
+	font-size:10px;
+	font-weight:bold;
+	padding-left:5px;
+	height:20px;
+	clear:both;
+}
+.SearchBoxRefineButton
+{
+	padding-left:10px !important;
+	font-family:"Trebuchet MS" !important;
+	font-size:12px !important;
+	font-weight:bold;
+	background-color:Black;
+	color:White;
+	border:none;
+	padding-left:10px;
+	padding-right:10px;
+	width:75px !important;
+	height: 18px !important;
+
+}
+.SearchBoxviewMore
+{
+	float:left;
+	width:30%;
+	text-align:right;
+	margin-left:35px;
+	font-weight:bold;
+	font-size:10px;
+	font-family:"Trebuchet MS" !important;
+}
+.SearchBoxviewMore a
+{
+	text-decoration:none;
+}
+.mainSearchBox {
+	margin-bottom:50px !important;
+}
+
+.SearchBoxtabContentOutline {
+	padding:20px;
+}
+.SearchBoxtabContentOutlineContent {
+	background-color:#ffffff;
+	padding:20px;
+}
+
+/* Business Detail Styling */
+
+#capsule {
+	margin-bottom:20px;
+	line-height:22px;
+}
+
+#additional-details {
+}
+
+.column {
+	float:left;
+	width:28%;
+	*width:32%;
+	font-size:12px;
+	line-height:16px;
+	padding:2px;
+}
+#column3 {
+	padding-left:10px;
+}
+#column4 {
+	width:16%;
+	padding:0px !important;
+}
+#businessListingMap {
+	width:350px;
+	float:left;
+	margin-right:17px;
+}
+#businessListingRelated {
+	width:265px;
+	float:left;
+}
+.column a {
+	text-decoration:none;
+}
+
+.column a:hover {
+	text-decoration:underline;
+}
+
+.heading {
+	text-transform:uppercase;
+	color:#666666;
+	font-weight:bold;
+}
+
+.line-detail {
+	margin-bottom:10px;
+}
+
+.rating-container {
+	display:inline;
+}
+
+#bizlisting_map_canvas {
+	float:left;
+	width:540px;
+	height:400px;
+}
+
+#search_map_canvas {
+	margin-top:20px;
+}
+
+#bizlisting_directions {
+	float:left;
+	width:0px;
+	font-family:Arial;
+	font-size:12px;
+}
+
+#map, #map tr th {
+	font-size:14px;
+	line-height:24px;
+}
+
+#map tr td input {
+	height:auto;
+	font-size:16px;
+}
+
+#comments {
+	font-family:"Trebuchet MS", Arial !important;
+}
+
+#review {
+	font-family:Georgia;
+	font-size:12px;
+	line-height:20px;
+}
+
+/* SINGLE POST WIDGET STYLING */
+
+.single-post-widget-styleA { 
+	width:100%;
+}
+
+.single-post-widget-title-styleA {
+	width:100%;
+	*width:93%;
+	height:50px;
+	background-color:#000000;
+	font-size:20px;
+	font-family:"Trebuchet MS", Arial;
+	padding:5px;
+	line-height:20px;
+}
+
+.single-post-widget-image-styleA { }
+
+.single-post-widget-link-styleA {
+	color:#ffffff;
+	text-decoration:none;
+}
+
+.single-post-widget-imagelink-styleA { }
+
+.single-post-widget-subhead-styleA {
+	display:block;
+	font-size:11px;
+	font-family:Georgia;
+	font-weight:normal;
+}
+
+.single-post-widget-styleB { 
+	width:100%;
+	padding-bottom:5px;
+	padding-left:8px;
+	padding-right:8px;
+
+}
+
+.single-post-widget-title-styleB {
+	width:100%;
+	*width:93%;
+	height:59px;
+	font-size:28px;
+	font-family:Georgia, Arial;
+	font-style:italic;
+	line-height:28px;
+}
+
+.single-post-widget-image-styleB { }
+
+.single-post-widget-link-styleB {
+	color:#7d7d7d;
+	text-decoration:none;
+}
+
+.single-post-widget-imagelink-styleB { }
+
+.single-post-widget-subhead-styleB {
+	display:block;
+	font-size:11px;
+	font-family:Georgia;
+	font-weight:normal;
+}
+
+.single-post-widget-excerpt-styleB {
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	line-height:14px;
+}
+
+
+
+
+.news-list-container {
+	margin-top:20px;
+}
+
+.commentText span {
+	display:block;
+	margin-top:7px;
+	font-size:10px;
+	float:right;
+}
+
+.commentText span a {
+	text-decoration:none;
+}
+
+.commentText span a:hover {
+	text-decoration:underline;
+}
+
+.slider-readmore { font-size:11px; font-family: "Trebuchet MS",Tahoma; font-weight:bold; }
+
+.review_from {
+	color:#008000;
+	font-family:Arial;
+	font-size:11px;
+	text-transform:none;
+	
+}
+
+.full_review_link {
+	font-size:10px;
+}
+
+.user-item-description {
+	border:1px solid #c7c7c7;
+	background-color: #eeeeee;
+	padding:5px;
+	font-size:12px;
+	font-family:Arial;
+}
+
+.user-item-description img {
+	margin:0 15px 0 0;
+	float:left;
+}
+
+.article-copyright {
+	font-size:12px;
+	color: #666666;
+	font-style:italic;
+	clear:both;
+	padding-top:20px;
+	margin-left:10px;
+}
+
+.byline {
+	font-weight:bold;
+	font-size:11px;
+	color: #666666;
+	text-transform:uppercase;
+	font-family:"Arial";
+}
+
+.biz-logo {
+	float:left;
+	margin-right:10px; 
+	margin-bottom:10px;
+}
+
+.enhanced-video {
+	margin:0 auto;
+	text-align:center;
+}
+
+.video-text {
+	width:400px;
+	text-align:left;
+	margin-left:100px;
+}
+
+/* Outbrain Styling */
+
+.outbrain {
+	padding-top:15px;
+}
+
+.ob_rec {
+	border-right:1px solid #c7c7c7;
+	margin-right:10px !important;
+	padding-right:10px;
+}
+
+.rec-link, .rec-src-link {
+	font-family:"Trebuchet MS", Arial;
+	font-size:11px !important;
+	
+}
+
+.ob_rec h4 {
+	color: #959595;
+	text-transform:uppercase;
+	font-family:"Trebuchet MS", Arial;
+	font-size:12px !important;
+}
+
+.ob_sl h4 {
+	color: #666666;
+	text-transform:uppercase;
+	font-family:"Trebuchet MS", Arial;
+	font-size:12px !important;
+}
+
+.outbrain_rec_li {
+	padding-bottom: 3px !important;
+}
+.networktab
+{
+}
+
+.networktab ul li a
+{
+	display:inline-block;
+	padding: 3px 0px 3px 0px;
+	margin-right:10px;
+	font-family:"Trebuchet MS", Arial;
+	font-size:14px !important;
+	color:#bbbbbb;
+}
+
+.wp-polls-ul 
+{ 
+	margin: 0px !important; 
+}
+/* ********************** FEEDBACK BOX STYLING *********************** */
+      .slide-out-div {
+      	  z-index:50000;
+          padding: 20px;
+          width: 500px;
+          background: #000000;
+          border: #ffffff 1px solid;
+          font-family:"Trebuchet MS", Arial;
+          color:white;
+      }
+      
+
+
+#author-description h2 {
+	text-transform:uppercase;
+	font-family:"Trebuchet MS", Arial;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#author-description {
+	font-family:"Trebuchet MS", Arial;
+	font-size:12px;
+	line-height:16px;
+}
+
+#entry-author-info {
+	border-bottom: 1px solid #C7C8CA;
+	padding-bottom: 8px;
+	margin-top:8px;
+}
+
+
+/* ************************ MAIN DISPLAY STYLES ************************ */
+
+.md1-widget {
+	background-color:black;
+	padding:10px;
+}
+.md1-featured-image {
+}
+.md1-story-title {
+	font-family:Georgia;
+	font-size:36px;
+	padding:0px;
+	margin:0px;
+	margin-bottom:4px;
+}
+.md1-story-title-link {
+	color:#ffffff;
+	text-decoration:none;
+}
+.md1-story-title-link:hover {
+	text-decoration:underline;
+}
+.md1-excerpt {
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:12px;
+	line-height:16px;
+}
+.md1-excerpt a {
+	color: #3d7792;
+	font-size:14px;
+	text-decoration:none;
+}
+
+
+/* ************************ CATEGORY BOX STYLES ************************ */
+
+.sh-category-display {
+	padding-bottom:5px;
+	padding-top:5px;
+	overflow:hidden;
+}
+/* generally use this color */
+.sh-category-display-title {
+	font-family: "Trebuchet MS";
+	font-size:18px;
+	margin:0px;
+	padding: 0px;
+	text-transform:uppercase;
+}
+.sh-category-display-title a {
+	color:#000000;
+	text-decoration:none;
+}
+
+/* unless if it's in the main div */
+#section-front-container .sh-category-display-title {
+	font-size:16px;
+	font-weight:bold;
+}
+#section-front-container .sh-category-display .content-area, #section-front-container .sh-category-display .content-area a {
+	font-size:12px !important;
+	font-family:"Trebuchet MS", Arial !important;
+	line-height:14px;
+}
+
+.sh-category-display .content-area a {
+	display:block;
+}
+
+/*#section-front-container .sh-category-display .content-area a {
+	margin-bottom:3px;
+}*/
+
+#section-front-container .sh-category-display .content-area .content-text-area {
+	/* height:86px; */
+	overflow:hidden;
+	margin-bottom:4px;
+	float:left;
+}
+#section-front-container .sh-category-display .more-content-link {
+	font-family:Georgia;
+	font-size:12px;
+	float:left;
+	padding-top:0px;
+}
+
+.sh-category-display-title a:hover {
+	text-decoration:underline;
+}
+.sh-category-display-left-image {
+	float:left;
+	margin-right:3px;
+	margin-top:3px;
+}
+
+.content-area {
+	float:left;
+	font-family:Georgia;
+	font-size:12px;
+	line-height:18px;
+}
+.content-area a {
+	font-size:14px;
+	font-family:"Trebuchet MS";
+}
+.sh-category-display-right-image {
+	float:right;
+	margin-left:3px;
+	margin-top:3px;
+}
+
+/* ******************** LEAD STORY DESIGN 2 STYLES ******************** */
+
+#lead-story-container {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	background-color:#000000;
+	background-repeat:no-repeat;
+	background-position:center center;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#lead-story-div {
+	width:980px;
+	margin:0px auto;
+}
+
+#lead-story-text {
+	font-size:24px;
+	font-family:"PT Serif";
+	color:#ffffff;
+	text-align:right;
+}
+
+#lead-story-text-excerpt {
+	line-height:28px;
+}
+
+#lead-story-text h1 {
+	margin:0px;
+	padding:0px;
+	font-family:"PT Serif";
+	font-size:80px;
+	color:#ffffff;
+	font-weight:normal;
+	margin-bottom:10px;
+	text-align:right;
+}
+
+#lead-story-text h3 {
+	margin:0px;
+	padding:0px;
+	text-transform:uppercase;
+	font-size:24px;
+	font-family:"Trebuchet MS";
+	font-weight:bold;
+	color:#cccccc;
+	margin-bottom:10px;
+	text-align:left;
+}
+
+#lead-story-text a {
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+/* ******************** LEAD STORY DESIGN C STYLES ******************** */
+
+#lead-storyC-wrap { width: 100%; clear:both; }
+#lead-storyC-category_header {
+	float:left;
+	margin-bottom: 5px;
+	padding: 3px 20px 3px 8px;
+	color: #ffffff;
+	font-family: "Trebuchet MS";
+	font-size: 16px;
+}
+#lead-storyC-category_header a, #lead-storyC-category_header a:hover {
+	color:#ffffff;
+	text-decoration:none;
+}
+#lead-storyC-title {
+	float: left;
+	width: 100%;
+	margin-bottom: 3px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	font-family: "Trebuchet MS";
+	font-weight: bold;
+	font-size: 34px;
+}
+#lead-storyC-image {width: 100%;margin-bottom: 2px;}
+#lead-storyC-title a { color: #000000; }
+#lead-storyC-story {width: 100%;}
+
+#lead-storyC-story_body {
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	font-family: Georgia;
+	line-height:20px;
+}
+
+#lead-storyC-relLinks { 
+	padding-left: 10px; 
+	margin-left:10px;
+	height:80px;
+	float: left;
+	width: 32%;
+	font-family: Georgia;
+	font-size: 12px;}
+#lead-storyC-relLinks ul { margin-top: 0px; padding-left: 0px; }
+#lead-storyC-relLinks ul li { list-style-type: none; margin-top: 0px; padding-left: 0px; margin-bottom:3px; font-style:italic; line-height: 1.2em; }
+
+/* ******************** LEAD STORY DESIGN D STYLES ******************** */
+
+#lead-story-container-D {
+	width: 960px;
+	height: 394px;
+	border-bottom: 1px solid #bbbbbb
+}
+
+#lead-story-left {
+	width: 670px;
+	height: 385px;
+	float: left;
+}
+#lead-story-image-left {
+	width: 660px;
+	max-height: 305px;
+	margin: 0px 0px 3px 0px;
+	float:left;
+}
+#lead-story-text-left {
+	width: 660px;
+	height: 95px;
+	padding: 0px 0px;
+	float: left;
+}
+#lead-story-headline-left {
+	width: 63%;
+	height: 100%;
+	padding: 0px 5px 0px 5px;
+	margin: 0px 0px;
+	float: left;
+}
+#lead-story-headline-left h1 {
+	font-family: "Open Sans";
+	font-size: 36px;
+	line-height:36px;
+	font-weight:700;
+	text-transform:uppercase;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	height:71px;
+	overflow: hidden;
+}
+#lead-story-headline-left a{
+	color:#000000;
+}
+#lead-story-cat-left {
+	float: left;
+	width: 37%;
+	font-family: "Open Sans";
+	font-size:14px;
+	line-height: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0px 5px;
+	margin:3px 0px 0px 0px;
+}
+#lead-story-excerpt-left {
+	font-family: "Open Sans";
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	width: 37%;
+	height:57px;
+	overflow:hidden;
+	padding: 0px 5px 0px 5px;
+	margin: 0px 0px;
+	float: left;
+}
+#lead-story-excerpt-left a {
+	color:#000000;
+}
+#lead-story-right {
+	width: 285px;
+	height: 385px;
+	border-left: 1px solid #000000;
+	float: left;
+}
+#lead-story-right-top {
+	height: 192px;
+	width: 290px;
+	padding: 0px 0px 7px 10px;
+	overflow: hidden;
+	border-bottom:1px solid #000000;
+	float:left;
+}
+.lead-story-image-right {
+	height: 180px;
+	width: 140px;
+	margin: 0px 10px 0px 0px;
+	float: left;
+}
+.lead-story-text-right {
+	height:180px;
+	overflow:hidden;
+}
+.lead-story-headline-right {
+	width: 130px;
+	float: left;
+	margin: 5px 0px;
+}
+#lead-story-headline-right a {
+	color:#000000;
+}
+.lead-story-category-right {
+	width: 130px;
+	margin: 0px 0px 2px 0px;
+	float:left;
+}
+.lead-story-category-right h3 {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.lead-story-headline-right h2 {
+	font-family: "Open Sans";
+	font-weight:700;
+	font-size: 20px;
+	line-height: 18px;
+	text-transform:uppercase;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	float:left;
+	max-height: 74px;
+	overflow: hidden;
+}
+.lead-story-headline-right a{
+	color:#000000;
+}
+.lead-story-excerpt-right {
+	float:left;
+	width:130px;
+	max-height:70px
+	font-family: "Open Sans";
+	font-size: 13px;
+	line-height: 15px;
+	overflow: hidden;
+}
+.lead-story-excerpt-right a{
+	color:#000000;
+}
+
+#lead-story-right-bottom {
+	height: 193px;
+	width: 290px;
+	padding: 12px 0px 7px 10px;
+	overflow: hidden;
+	float:left;
+}
+
+/* ******************** LEAD STORY DESIGN E STYLES ******************** */
+
+#lead-story-E-container {margin:0 auto;}
+#lead-story-E-container .slides {
+	display:block;
+	position:relative;
+	overflow:hidden;
+}
+#lead-story-E-container .slides li {
+	position: absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+#lead-story-E-container .slides li.active {
+	display:block;
+	position:relative;
+}
+
+#lead-story-E-slider ul, #lead-story-E-container li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#lead-story-E-slider, #lead-story-E-slider li {
+	width:960px;
+	height:305px;
+	overflow:hidden;
+}
+.lead-story-E-slider-text {
+	width:280px;
+	height:305px;
+	background-color:#f1f2f2;
+	font-family:"Open Sans";
+	font-weight:200;
+	font-size:16px;
+	padding:20px 10px 10px 10px;
+	float:left;
+}
+.lead-story-E-slider-text a {
+	text-decoration:none;
+	color:#000000;
+}
+.lead-story-E-slider-text h1 {font-family:"Open Sans" !important;
+font-size:40px !important;
+font-weight:700;
+text-transform:uppercase;
+}
+.lead-story-E-slider-image {
+	width:680px;
+	height:305px;
+	overflow:hidden;
+	float:left;
+}
+.lead-story-E-slider-ad {
+	width:954px;
+	height:300px;
+	text-align: center;
+	margin:auto auto;
+}
+.lead-story-E-menu-items {
+	display:inline-block;
+	height:80px;
+	overflow:hidden;
+	border-bottom:1px solid #000000;
+	border-right:1px solid #000000;
+	background-repeat:repeat-x;
+	padding:2px 5px 8px 5px;
+	float:left;
+}
+.lead-story-E-menu ul {padding:0px 0px 0px 0px;}
+.lead-story-E-menu-items.last {border-right:none;}
+.featuredCategory {
+	width:100%;
+	text-align:center;
+	font-family:"Open Sans";
+	font-weight:700;
+	font-size:14px;
+	text-transform:uppercase;
+	margin:6px 0px 5px 0px;
+	float:left;
+}
+.menuTitle {width:100%;text-align:center;font-family:"Open Sans";font-weight:400;font-size:15px;color:#898989;line-height:1.3em;float:left;}
+.selector {margin:0px auto; width:17px;height:9px;}
+
+
+/* ******************** SLIDESHOW ARTICLE STYLES ******************** */
+#slideshow-article-slider {background-color:#f7f7f7}     
+#slideshow-article-wrap {font-family: "Trebuchet MS";color: #000000;width: 100%;}
+#slideshow-article-header {margin:12px 10px 10px 10px}
+#slideshow-article-headline {
+	float:left;
+	width:83%;
+	font-weight: bold;
+	font-size: 26px !important;
+	}
+#slideshow-article-navigation-buttons {float:right;width:15%;margin-right:10px;padding-top:7px}
+#slideshow-article-navigation-buttons a {outline: 0;}
+.slideshow-article-slideshowBody {
+	float: left;
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 0px;
+	border-right: 1px solid #000000;
+}
+.slideshow-article-slideshowImage {padding-left:8px}
+.slideshow-article-imageCaption {font-size: 12px;margin: 0px 10px 0px 10px;padding-top:5px;}
+.slideshow-article-slideshowStory {float: left;width: 100%;margin-top:7px;padding:0px 15px 5px 15px}
+.slideshow-article-storyHeadline {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom:13px;
+	padding: 13px 0px 0px 0px;
+	border-top:1px solid #989898;
+}
+.slideshow-article-storyBody {
+	font-size: 14px;
+	font-family: georgia;
+	line-height: 1.3em;
+}
+#slideshow-article-slider ul, #slideshow-article-slider li{margin:0;padding:0;list-style:none;}
+#slideshow-article-slider, #slideshow-article-slider li{overflow: hidden;}
+#slideshow-article-prevBtn {width: 15px;float: left;}
+#slideshow-article-prevBtn img {border:0px;}
+#slideshow-article-pageCounter {
+	font-family: georgia;
+	width: 57px;
+	text-align: center;
+	margin-left: 7px;
+	padding: 4px 0px 0px 0px;
+font-weight: bold;
+	font-size: 14px;
+	float:left;
+}
+#slideshow-article-nextBtn {width: 15px;float:right;}
+#slideshow-article-nextBtn img { border:0px; }
+.entry-content #slideshow-article-slider #slideshow-article-wrap h1 {font-size: 26px;}
+.entry-content #slideshow-article-slider #slideshow-article-wrap #slideshow-article-body .slideshow-article-slideshow .slideshow-article-slideshowBody {width: 100%;}
+.entry-content #slideshow-article-slider #slideshow-article-wrap #slideshow-article-body .slideshow-article-slideshow .slideshow-article-slideshowBody .slideshow-article-slideshowImage {	margin: 0px 15px 0px 7px;}
+.entry-content #slideshow-article-slider #slideshow-article-wrap #slideshow-article-body .slideshow-article-slideshow .slideshow-article-slideshowBody .slideshow-article-imageCaption {font-size: 10px}
+.entry-content #slideshow-article-slider #slideshow-article-wrap #slideshow-article-body .slideshow-article-slideshow .slideshow-article-slideshowStory {width: 100%;}
+.entry-content #slideshow-article-slider #slideshow-article-wrap #slideshow-article-body .slideshow-article-slideshow .slideshow-article-slideshowStory .slideshow-article-storyHeadline {font-size: 14px; line-height: 1.1em; margin-bottom: 12px;}
+.entry-content #slideshow-article-slider #slideshow-article-wrap #slideshow-article-body .slideshow-article-slideshow .slideshow-article-slideshowStory .slideshow-article-storyBody {font-size: 12px; line-height: 1.2em;}
+     
+/* Print Style Sheet */
+@media print {
+	body { margin:0 }
+	#print-header { display:block; }
+	#header { display:none; }
+	#container { width: 100%; }
+	.entry-content { width:100%; margin:0px; font-size: 14pt !important; line-height: 30pt !important;}
+	.entry-content-left { display:none; }
+	.ArticleComments { display:none; }
+	.BizArticleComments { display:none; }
+	.tab-container { display:none; }
+	#map { display:block; }
+	#comments { display:block; }
+	#review { display:block; }
+	#map { display:block; }
+	#feedback { display:none; }
+	#right-rail-container { display:none; }
+	#pencil { display:none; }
+	#top-leaderboard { display:none; }
+	#footer-container { display:none; }
+}
+
+.river-more-button {
+	display:block;
+	width:80%;
+	border:1px solid #999999;
+	height:30px;
+	background-color:#cccccc;
+	text-align:center;
+	padding-top:10px;
+	font-size:16px;
+	text-decoration:none !important;
+	color:#000000 !important;
+	text-transform:uppercase;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.networktab a[title="active"] {
+	background-color:#ffffff;
+	padding-left:10px;
+	padding-right:10px;
+	color:#000000;
+}
+
+
+/* WP Polls Styling */
+
+p.speech {
+	font-family:'Open Sans';
+	font-weight:800;
+	font-size:22px;
+	line-height:22px;
+	padding:15px 35px 15px 35px; 
+	margin:10px 10px 30px 10px;
+	color:#ffffff;
+	border-top-right-radius:20% 50%;
+	border-bottom-right-radius:20% 50%;
+	border-top-left-radius:20% 50%;
+	border-bottom-left-radius:20% 50%;
+	position:relative;
+}
+
+p.speech:before {  
+	content: ' ';  
+	position: absolute;  
+	width: 0;  
+	height: 0;  
+	left: 60px;  
+	bottom: -30px;
+	border: 20px solid;    
+}  
+.wp-polls-ul label {
+	display:block;
+	float:left;
+	text-align:left;
+	width:90%;
+	font-family:'Open Sans';
+	font-weight:800;
+	font-size:12px;
+}
+.wp-polls .Buttons {
+	width:100%;
+	margin:10px 0px 10px 0px;
+	border:auto;
+}
+
+#BAP-holder { display:none; }
+
+/* Ultimate Twitter Profile */
+.twtr-widget h3, .twtr-widget h4 {
+	clear: none !important;
+}
+
+#footer, #footer a {
+	width:100%;
+	height:auto;
+	margin: 0px auto;
+	color:#cccccc;
+	font-size:10px;
+	line-height: 12px;
+	font-family: "Open Sans";
+}
+
+/* Star Ratings */
+.businessListingRating {
+	width:100%;
+	margin: 10px 0px;
+}
+.ratingText {
+	padding-top:5px;
+}
+.webwidget_rating_sex{
+    padding: 0px;
+    margin: 0px 24px 0px 0px;
+    float: left;
+}
+.webwidget_rating_sex li{
+    line-height: 0px;
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 2px;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+}
+.webwidget_rating_sex li span{
+    display: none;
+}
+
+.rating-static {
+  width: 60px;
+  height: 16px;
+  display: block;
+  background: url('/wp-content/themes/ht-niche-2012/images/star-rating.png') 0 0 no-repeat;
+}
+
+.user-rating {
+	float:right;
+	width:19%;
+	padding: 5px 0px 0px 0px;
+}
+
+.rating-50 { background-position: 0 0; }
+.rating-40 { background-position: -12px 0; }
+.rating-30 { background-position: -24px 0; }
+.rating-20 { background-position: -36px 0; }
+.rating-10 { background-position: -48px 0; }
+.rating-0 { background-position: -60px 0; }
+
+.rating-value {
+	font-size: 10px;
+	line-height: 12px;
+	text-transform: none;
+}
+
+/* Blog Roll */
+.post-content-blogroll .entry-blogroll {
+	line-height:18px;
+	font-size:14px;
+	font-family:"PT Serif";
+}
+.post .post-image-blogroll {
+	padding-right:10px;
+	width:640px;
+	margin-bottom:20px;
+	float:left;
+}
+.post-image-caption-blogroll {
+	width:640px;
+	font-family:"PT Sans";
+	font-size:12px;
+	line-height: 14px;
+}
+.post .post_date-blogroll {
+	margin:0px 0px 20px 0px;
+	font-family: "PT Serif";
+	font-size: 14px;
+	line-height: 18px;
+}
+.post .post-content-blogroll {
+	padding-right:30px;
+	width:640px;
+	float:left;
+	font-family:"PT Serif";
+}
+
+.post .post-content-blogroll h2 {
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.post .post-content-blogroll h2 a {
+	color:#000000 !important;
+}
+
+.post .post-content-blogroll p {
+	margin-bottom:20px;
+}
+
+.post-spacer-blogroll {
+	clear:both;
+	padding-top:20px;
+	margin-bottom:20px;
+	border-bottom: 1px solid #cccccc;
+}
+
+/* Better Living */
+
+#core-665{  width:640px;   height:428px;   background:#fcfae5 url('images/widgetbg-665-2.gif') repeat-x bottom left}
+#core-665 .main{ padding:10px 16px}
+#core-665 .search-box{ height:50px}
+#core-665 p.header{ color:#000;  font-weight:bold;  font-size:16px;  margin:0 0 6px}
+#core-665 input#location{ color:#a0a0a0;  font-style:italic;  font-size:24px;  height:41px;  width:47	5px;
+  float:left;padding:4px 0 4px 10px;margin:0px 5px 0px 0px;border:1px solid #aaa}
+#core-665 a.button{ background:-moz-linear-gradient(center top,#EFA660 0%,#E77C17 100%) repeat scroll 0 0 #E77C17;
+  background-color:#E77C17;  border-color:#944F0F; border-style:solid; border-width:2px 2px 2px 2px;  color:#FFF; 
+  cursor:pointer;  display:block;  text-decoration:none !important;  float:left;  height:47px;  width:110px;  text-align:center}
+#core-665 a.button span{ font-size:25px;  line-height:47px; text-shadow:-1px -1px 0 #A15710; font-weight:bold}
+#core-665 img{ border:0}
+#core-665 .links{ clear:both;  padding:2px 7px 24px;  font-size:14px;  width:400px}
+#core-665 .links p{ font-weight:bold;  margin:4px 0 4px}
+#core-665 .links ul{ margin:0 0 15px 40px}
+#core-665 .links li{ color:#333;  font-size:13px}
+/*
+#core-665 #links li a{ color:#00f;  height:auto}
+*/
+#core-665 ul{ -moz-padding-start:0;  margin:0}
+#core-665 ul.types{ clear:both;  padding:0;  margin-top:8px}
+#core-665 ul.types li{ list-style:none inside none;  height:20px;  float:left;  width:300px;  font-size:15px;  padding:0;  margin:0}
+#core-665 li label{ color:#000;  padding:0 0 0 5px}
+#core-665 .listme {color: #FFFFFF;padding: 20px 0 0 100px;}
+#core-665 .listme a {color: #FFFFFF;font-weight:bold;}
+
+
+/*
+adjust col0 search widget
+*/
+#core-665 {float:left;height:auto;}
+#core-665 .links {float:left;padding: 2px 7px 0;}
+#core-665 .main {float:left;padding: 10px 16px 0;}
+#core-665 .listme {padding:0;float:left;clear:both;
+  white-space:nowrap;margin:45px 0 11px 100px!important;/*ie6*/margin:40px 0px 0px 50px;}
+#core-665 input#location {height:49px;width:460px;line-height:49px;padding:0 0 0 10px;}
+
+.showqa h4, h4 {font-size:16px;color:#8DA814}
+.showqa p {border-bottom:1px dotted #ddd;margin:0 10px 6px 0;padding:0 0 8px}
+.showqa p:last-child {border:none}
+.showqa .left {float:left;width:310px;margin:10px 0 10px 10px!important;margin-left:5px;border-right:1px solid #ddd}
+.showqa .right {float:left;width:300px;margin:10px 0 0 10px}
+.showqa .more {clear:both;margin:0 12px 0 10px;padding:5px 0 10px;text-align:right;border-top: 1px dotted #ddd;}
+.item {float:left;margin:0 0 10px;border: solid 1px #ddd;}
+.item h5 {color:#fff;background:#4C9EB5;padding:5px 0 5px 10px;}
+.item{width:640px}
+.item h5 {color:#fff;font:bold 14px/1 Arial, sans-serif;text-transform:uppercase;letter-spacing:.05em;text-shadow: 0 1px 3px #276C7F;}
+
+/* Colorbox */
+#cboxLoadedContent {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 5px solid #000000;
+    height: 384px;
+    width: 689px;
+}
+
+/* StatKeeper Football Widget */ 
+.footballHeader {float:left;width:100%;border-bottom:2px solid #000000;}
+.footballQuartersLabel {text-align:right;margin-bottom:10px;font-size:8px;}
+.footballLabelPlaceholder {float:left;width:25%;}
+.footballQuarterLabel {float:left;width:12%;margin-bottom:5px;}
+.footballAwayTeam {float:left;width:25%;clear:left;font-size:10px;}
+.footballHomeTeam {float:left;width:25%;font-size:10px;}
+.footballHomeQuarters {float:left;width:75%;text-align:right;}
+.footballAwayQuarters {float:left;width:75%;text-align:right;border-bottom:2px solid #000000}
+.footballQuartersCol {float:left;width:12%;font-size:10px;text-align: right;padding-top:2px;}
+.footballPads {height:10px;clear:both;}
+.footballTeamStatsLink {float:right;clear:left;}
+.footballTable {clear:both;width:100%;border-bottom:2px solid #000000;}
+
+/* StatKeeper Player Profile */
+.playerTable {width:640px;}
+.playerImage {float:left; margin:0px 10px 5px 0px;width:200px;}
+.playerInfo {width:430px;float:left;font-family: "Open Sans";padding:20px 0px 0px 0px;}
+.playerName {font-size: 18px;font-weight: bold; border-bottom: 1px solid #ccc;padding:0px 0px 10px 0px;margin:0px 0px 10px 0px;width:100%;}
+.playerDataLabel {width:80px;}
+.playerTableHeader {padding:0px 0px 5px 0px;border-bottom:1px solid #ccc;overflow:auto}
+.playerImageUpdate {display:block;text-align:center;}
+.playerStats {margin: 10px 0px;}
+.playerStatsHeader {text-align:center;width:100%;}
+.playerStatsAbbr {float:left;width:100%;background-color:#ddd;}
+.playerStatsTableTitle {color:#fff;padding:5px 0px 5px 10px;width:100%;float:left;font-size: 16px;}
+.playerStatCell {text-align:center;width:100px;float:left;border-right:1px solid #fff;padding:3px 0px;}
+.playerStatsTable {border:1px solid #ccc;margin:5px 0px;font-family:"Open Sans";font-size:14px;width:640px;overflow:auto;margin:10px auto;}
+.playerStatLabel {padding-left:10px}
+.playerStatHeading {font-weight:bold;}
+
+/* StatKeeper Team Stats */
+#StatsTable {font-family:Open Sans;font-size:20px;line-height:20px}
+.footballStatsTitles {float:left; width:50%;}
+.footballStatLabels {float:left;width:100%;}
+.footballStatValues {float:left:width:100%;}
+.footballStats {font-weight:bold;font-size:20px;font-family: Open Sans}
+.footballStatsTeam {font-weight:bold;font-size:18px;line-height:18px;}
+.footballStatLabels {font-size:14px;line-height:18px;}
+.footballStatValues {font-size:14px;line-height:18px;}
+#footballTeamStatsTable {width:100%;font-family:"Open Sans";font-size:20px;line-height:20px;}
+#footballTeamStatsLabels {width:50%;float:left;}
+#footballTeamStatValues	{width:50%;float:left;}
+.footballStatsAwayTeam {width:50%;float:left;}
+.footballStatsHomeTeam {width:50%;float:left;}
+#footballPlayerStatsTable {margin:10px 0px;}
+.footballPlayerTeam {margin:5px 0px;}
+.footballPlayerStatType {font-size:16px;margin:5px 0px;}
+.footballPlayerStatLabels {font-size:14px;}
+.footballPlayerStatValues {font-size:14px;}
+.statsCell {border-right:1px solid #ffffff;width:50px;text-align:center;font-size:14px;}
+.statsCell:last-child {border-right:1px solid #cccccc;}
+.statsTable {width:640px;margin:20px 0px;}
+.statsTable tr:nth-child(even) {background-color:#f1f1f1}
+.statsPlayer {width:300px;border-right:1px solid #ffffff;padding:0px 5px;font-size:14px;}
+.statsPlayer:last-child {border-right:1px solid #cccccc;}
+.statsTitle {font-size:16px;text-transform:uppercase;padding:3px 5px;color:#fff;}
+.statsHeader {background-color: #ddd !important;}
+#footballTeamScoring {font-family:Open Sans;font-size:12px;line-height:14px;margin:10px 0px;}
+.teamScoringHeader {font-weight: bold;font-size: 16px; line-height:18px;margin:10px 0px 5px 0px;}
+
+/* StatKeeper Team Profile */
+.teamScheduleTable {width:640px;border:1px solid #ccc;margin:0px 0px 20px 0px;}
+.teamScheduleTable tr:nth-child(odd) {background-color: #f2f2f2}
+.teamScheduleTable th {border:1px solid #ccc; text-align:left;padding:5px;}
+.teamScheduleCell {border:1px solid #ccc;height:15px;padding:5px;}
+.teamScheduleHeading {background-color:#777 !important;color:#fff; font-size:16px;}
+.teamScheduleHeading td {padding:5px 5px;border-right:1px solid #ccc;}
+.teamInfo {font-family:"Open Sans";font-size:14px;line-height:16px;}
+.teamInfo h2 {font-size:26px;line-height:28px;margin:10px 0px;}
+.teamRosterTable {width:640px;border:1px solid #ccc;margin:0px 0px 20px 0px;}
+.teamRosterTable th {text-align:left;border:1px solid #ccc;padding:5px;}
+.teamRosterTable tr:nth-child(odd) {background-color:#f2f2f2;}
+.teamRosterHeading {background-color:#777 !important;color:#fff;font-size:16px;}
+.teamRosterHeading td {padding:5px;border-right:1px solid #ccc;}
+.teamRosterNo {width:10%;}
+.teamRosterName {width:65%;}
+.teamRosterGrade {width:25%;}
+.teamRosterCell {padding:5px;border:1px solid #ccc;}
+.teamData {float:left;padding:20px 0px 0px 0px;}
+.teamLogo {float:left;margin:0px 10px 0px 0px;}
+
+/* StatKeeper Schedule */
+#weeklySchedule {font-family:"Open Sans";}
+.gameSchedule {width:640px;margin:20px 0px;}
+.gameSchedule tr:nth-child(odd) {background-color:#f7f7f7}
+.scheduleWeek td {padding:5px;color:white;border:1px solid #ccc;font-size:16px;}
+.scheduleGame {border:1px solid #ccc;padding:8px;font-size:14px;line-height:16px;}
+.scheduleGame td {padding:5px;}
+.scheduleTeam {width:45%;}
+.scheduleDate {width:20%;}
+.scheduleTime {width:20%;}
+.scheduleView {width:15%;font-size:12px;}
+
+/* StatKeeper Team List */ 
+.teamListDiv {width:150px;height:170px;float:left;margin:20px 10px 20px 0px;font-family: "Open Sans"; font-size:14px;line-height: 16px;}
+.teamListName {margin: 5px 0px;font-size: 20px; line-height: 22px; text-transform: uppercase;text-align:center;}
+.sportMenuItem {margin: 5px;float:left;}
+
+/* StatKeeper Standings */
+.districtTable {border: 1px solid #ccc; width:640px;margin: 5px 0px 20px 0px;font-family:"Open Sans"}
+.districtTable tr:nth-child(even) {background-color: #f2f2f2;}
+.districtTable td {padding:5px 10px 5px 10px; border-right: 1px solid #fff;}
+.districtHeaderRow {background-color: #ddd !important;}
+.districtTitle {background-color: #ddd !important;color:#fff; font-size:16px;}
+.districtHeaderCell {text-align: left;font-weight: bold;font-size:14px;}
+.districtDataRow {border: 1px solid #ccc;}
+.districtDataCell {font-size: 14px;width:33%;}
+
+/* Twitter Tracker */
+.tweets .avatar{float:left;width:50px;clear:both;padding-right:5px}
+.tweets .msg{width:240px;float:left;padding-left:10px}
+.tweets .info{width:200px;float:right;text-align:right;padding-bottom:10px}
+
+/* SpinGo Calendar */
+#sg-content h2{font-family: Open Sans;padding:5px 0px 0px 10px;}
+.sg-modal {margin-top:60px !important;}
+#spingo-widget-bar {width:1000px}
+#spingo-widget-bar li {list-style-type: none;}
+
+#BCLcontainingBlock {
+  width: 100%;
+  height:100%;
+  margin-left: 10px;
+  float: right;
+}
+.BCLvideoWrapper {
+  position: relative;
+  padding-top: 1px;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+* html .BCLvideoWrapper {
+  margin-bottom: 45px;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+.BCLvideoWrapper div,
+.BCLvideoWrapper embed,
+.BCLvideoWrapper object,
+.BrightcoveExperience {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.widget-container .BCLvideoWrapper {height:100%; border:1px solid #cccccc;}
+.blogroll .BCLvideoWrapper {height:100%;padding-bottom:100%;}
+
+/* Movie listings */
+#theaterContainer {box-shadow:0 0 10px #888;padding:15px;font-family:Georgia;line-height:20px;}
+.showtimesContainer {box-shadow:0 0 10px #888;padding:0px 15px 15px 15px;font-family:Georgia;margin-bottom:30px;}
+#theaterContainer h2 {margin-bottom:5px;font-size:20px;}
+#theaterScheduleContainer {width:100%;font-family: "Georgia";font-size: 14px;}
+#theaterHeaderInfo, #theaterHeaderMap {width:50%;float:left;line-height:20px}
+#theaterHeadermap {width:300px; height:200px;}
+#theaterHeaderInfo h1 {line-height:36px;}
+#theaterHeaderContainer	{font-family: "Georgia";font-size:14px;line-height:16px;}
+#theaterHeaderContainer h1 {font-family: "Georgia"; padding:0px;}
+#theaterPricingLabel {float:left;width:20%;}
+#theaterPricingInfo  {float:left;width:80%;}
+#theaterSort {border-top:1px solid #ccc; border-bottom:1px solid #ccc;margin-top:10px; padding:5px 0px;}
+#theaterSortDate {float:left;margin-right:20px;}
+#theaterSortTheater {float:left;}
+.scheduleRow {padding:10px 0px;width:100%;border-bottom: 1px solid #ccc;}
+.scheduleRow:last-child {border:none;}
+.scheduleRow h2 {padding:0px;font-size:20px;}
+.scheduleRowInfo {float:left;width:30%;margin-right:30px;padding-top:5px;}
+.schedulRowTimes {float:left;width:65%;}
+.scheduleRowCell {
+	color: white;
+	font-weight: bold;
+	list-style-type:none;
+	display:inline-block;
+	margin:5px 20px 5px 0px;
+	width:70px;
+	height:30px;
+	background-image:url("http://golf.dev.htcreative.com/wp-content/themes/ht-niche-2012/images/ticketStub2.png");
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30px;
+	font-size:13px;
+	font-family: "Open Sans";
+}
+#movieTitleFull h1 {line-height:36px;}
+#movieFull {font-family:"Georgia";font-size:14px;line-height:20px;box-shadow:0px 0px 10px #888888;padding:20px;min-height:700px}
+#movieFullInfo	{width:100%;}
+#movieImageFull {float:left;width:100px;margin:0px 40px 0px 0px;text-align:center;}
+#movieInfoFull {float:left;width:460px;}
+#movieFullDescription {margin-top:10px;padding:20px 10px;border-top:1px solid #cccccc;}
+#movieButtons {width:100%;margin:0px 0px 10px 0px;font-size:12px;}
+#share-buttons {float:right;}
+#movieHeader {margin:0px 0px 10px 0px;}
+.movieListing {margin:10px 0px;font-size:14px;line-height:20px;}
+.movieListing a, .movieGallery a {color:#000000;}
+.movieListing h2 {margin: 0px 0px 5px 0px;font-size:20px;}
+.movieThumb {float:left;margin:0px 10px 0px 0px;width:16%;}
+.movieInfo {float:left;width:80%;}
+.movieExtra {font-size:75%;}
+.movieGallery {float:left;margin:0px 20px 10px 0px;min-height:220px;}
+.movieImageTitle {width:100px;}
+.movieGalleryTitle {font-size:14px;line-height:16px;width:100px;}
+#movieContainer {box-shadow: 0px 0px 10px #888888;padding:20px 0px 20px 30px;min-height:1000px}
+#movieNav{float:left;}
+#movieNav ul li {display:inline-block;margin-right:30px;}
+#movieNav ul li a {text-decoration: underline;}
+.singleTheaterContainer {padding:20px 0px; border-bottom:1px solid #cccccc;}
+.singleTheaterContainer:last-child {border-bottom:none;}
+.theaterInfo {background-color: #F39D22; border-bottom:1px solid #cccccc; padding:10px;margin:-1px -15px 0px -15px;font-size:14px;line-height:20px;}
+.theaterInfo a {color:#ffffff;}
+.theaterInfo h2 {margin-bottom:10px;}
+.passes {color:#666666;font-size:12px;}
+
+/* Advertiser Submitted Content */
+.adpost-widget-container {padding:0px 0px 10px 0px;background-color:#FDF6E5}
+.adpost-widget {margin:5px 5px;float:left;width:140px;font-family:'PT Serif';}
+.adpost-widget-title {font-size:16px;line-height:18px;font-weight:bold;}
+.adpost-widget-author {font-weight:italic;font-size:12px;line-height:14px;margin:3px 0px 0px 0px}
+.adpost-widget-author-page-link {font-size:12px;line-height:14px;}
+
+/* Watchdog Widget */
+.watchdogWidget .placeholder-container {height: 79px;}
+.watchdogWidget .post-content .entry {font-size:14px; font-family:Tahoma, Arial, Verdana, sans-serif;color:#707070;}
+.watchdogWidget .post-content p.first-tag, .post-content iframe {display:none;}
+.watchdogWidget .post-content .postmetadata {display:none;}
+.watchdogWidget .author {display:none;}
+.watchdogWidget .sf-widget-title {margin-bottom:10px;background-color: #1e73be !important;color:#ffffff;}
+.watchdogMore	{font-size:12px;color:#000;}
+.more_post	{text-align: right;}
+
+/* Celebrations */
+.sh-celebrations {border:1px solid #ccc;}
+.sh-celebrations .sf-widget-title {padding:10px;color:#ffffff;}
+.sh-celebrations .sf-widget-title, .sh-celebrations{border-top-left-radius: 10px;border-top-right-radius: 10px}
+.celebration-image {margin:0 10px 10px 0;}
+.catPost {clear:both; margin:0 5px; font-size:12px;padding: 10px 0px; border-bottom: 1px solid #ccc;}
+.catPostTitle {margin:0 0 5px 0;}
+.catPostTitle h2{display:inline; font-size:12px;}
+.sh-celebrations .more_post {padding:5px;text-align: center;margin: 5px 0px}
+
+/* Schedules */
+.sh-schedules .content-area {margin-left:15px;}
+.sh-schedules .sh-category-display-title {text-align:center;}
+
+.shop-icons {
+	width:220px;
+	float:left;
+	padding: 0px 20px 15px 0px;
+}
